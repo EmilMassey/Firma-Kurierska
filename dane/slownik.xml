@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<slownik>
+	<typy>
+		<typ>polecenie</typ>
+		<typ>raport</typ>
+		<typ>ustawienie</typ>
+		<typ>zarzadzanie</typ>
+		<typ>rada</typ>
+		<typ>pogawedka</typ>
+		<typ>inne</typ>
+	</typy>
+
+	<akcje>
+		<akcja nazwa="dostarczanie" typ="polecenie">
+			<slowo mnoga="false">dostarcz</slowo>
+			<slowo mnoga="false">zawiez</slowo>
+			<slowo mnoga="true">zawiezcie</slowo>
+			<slowo mnoga="false">wiez</slowo>
+			<slowo mnoga="true">wiezcie</slowo>
+			<slowo mnoga="false">zanies</slowo>
+			<slowo mnoga="true">zaniescie</slowo>
+			<slowo mnoga="false">przywiez</slowo>
+			<slowo mnoga="true">przywiezcie</slowo>
+		</akcja>
+		<akcja nazwa="ile" typ="raport">
+			<slowo mnoga="false">ile</slowo>
+			<slowo mnoga="true">iloma</slowo>
+            <slowo mnoga="false">policz</slowo>
+            <slowo mnoga="false">oblicz</slowo>
+		</akcja>
+		<akcja nazwa="jak" typ="raport">
+			<slowo mnoga="false">duzo</slowo>
+			<slowo mnoga="false">malo</slowo>
+			<slowo mnoga="false">dlugo</slowo>
+			<slowo mnoga="false">krotko</slowo>
+			<slowo mnoga="false">bardzo</slowo>
+			<slowo mnoga="false">mocno</slowo>
+			<slowo mnoga="true">mocne</slowo>
+		</akcja>
+		<akcja nazwa="pokaz" typ="raport">
+			<slowo mnoga="false">pokaz</slowo>
+			<slowo mnoga="false">pokazac</slowo>
+			<slowo mnoga="false">pokazesz</slowo>
+			<slowo mnoga="true">pokazcie</slowo>
+			<slowo mnoga="true">pokazecie</slowo>
+			<slowo mnoga="false">powiedz</slowo>
+			<slowo mnoga="true">powiedzcie</slowo>
+			<slowo mnoga="false">powiedziec</slowo>
+			<slowo mnoga="false">podaj</slowo>
+			<slowo mnoga="false">podac</slowo>
+			<slowo mnoga="true">podajcie</slowo>
+			<slowo mnoga="false">zdaj</slowo>
+			<slowo mnoga="true">zdajcie</slowo>
+		</akcja>
+		<akcja nazwa="dodanie" typ="zarzadzanie">
+			<slowo mnoga="false">dodaj</slowo>
+			<slowo mnoga="false">nowa</slowo>
+			<slowo mnoga="false">nowe</slowo>
+			<slowo mnoga="false">kolejny</slowo>
+			<slowo mnoga="false">kolejna</slowo>
+			<slowo mnoga="true">kolejne</slowo>
+			<slowo mnoga="true">kolejni</slowo>
+		</akcja>
+	</akcje>
+	
+	<obiekty>
+		<obiekt nazwa="pojazd">
+			<slowo mnoga="false">samochod</slowo>
+			<slowo mnoga="true">samochody</slowo>
+			<slowo mnoga="true">samochodow</slowo>
+			<slowo mnoga="false">auto</slowo>
+			<slowo mnoga="true">auta</slowo>
+			<slowo mnoga="true">aut</slowo>
+			<slowo mnoga="false">pojazd</slowo>
+			<slowo mnoga="true">pojazdy</slowo>
+            <slowo mnoga="true">pojazdow</slowo>
+            <slowo mnoga="true">pojazdami</slowo>
+		</obiekt>
+		<obiekt nazwa="paczka">
+			<slowo mnoga="false">paczka</slowo>
+			<slowo mnoga="true">paczki</slowo>
+			<slowo mnoga="false">paczke</slowo>
+			<slowo mnoga="true">paczek</slowo>
+			<slowo mnoga="false">przesylka</slowo>
+			<slowo mnoga="false">przesylke</slowo>
+			<slowo mnoga="true">przesylki</slowo>
+		</obiekt>
+		<obiekt nazwa="paliwo">
+			<slowo mnoga="false">paliwo</slowo>
+			<slowo mnoga="false">paliwa</slowo>
+			<slowo mnoga="false">benzyna</slowo>
+			<slowo mnoga="false">benzyny</slowo>
+		</obiekt>
+		<obiekt nazwa="kierowca">
+			<slowo mnoga="false">kierowca</slowo>
+			<slowo mnoga="true">kierowcy</slowo>
+			<slowo mnoga="false">kierowce</slowo>
+			<slowo mnoga="true">kierowcow</slowo>
+		</obiekt>
+		<obiekt nazwa="dostawa">
+			<slowo mnoga="false">dostawa</slowo>
+			<slowo mnoga="true">dostaw</slowo>
+			<slowo mnoga="false">dostawy</slowo>
+		</obiekt>
+	</obiekty>
+	
+</slownik>
