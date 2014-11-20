@@ -3,6 +3,7 @@ import obiekty.Pojazd;
 
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.Random;
 
 import javax.xml.xpath.*;
 
@@ -54,8 +55,23 @@ public class Pojazdy {
 		}
 	}
 	
+	public String generujRejestracje(String rej) {
+		String litery = "ABCDEFGHIJKLMNOPQRSTUWXYZ";
+		
+		rej += " ";
+		
+		Random generator = new Random();
+		
+		for(int i=0; i<4; i++)
+			rej += Integer.toString(generator.nextInt(9));
+		rej += litery.charAt(generator.nextInt(litery.length()-1));
+		
+		return rej;
+	}
+	
 	public void nowyPojazd(Map <String, String> dane) throws Exception {
 		try {
+			dane.put("rejestracja", generujRejestracje("PO"));
 			this.baza_danych.dodajRekord("pojazd", dane);
 			this.zaladujListePojazdow();
 		} catch (Exception e) {
@@ -63,11 +79,21 @@ public class Pojazdy {
 		}
 	}
 	
+	public void usunPojazd(String id) throws Exception {
+		this.baza_danych.usunRekord(id);
+		this.zaladujListePojazdow();
+	}
+	
+	public void zmienNazwePojazdu(String id, String nowa_nazwa) throws Exception {
+		this.baza_danych.edytujRekord(id, "nazwa", nowa_nazwa);
+		this.zaladujListePojazdow();
+	}
+	
 	public ArrayList <String> listaNazwPojazdow() {
 		ArrayList <String> lista = new ArrayList <String>();
 		
 		for(Pojazd pojazd : this.pojazdy) {
-			lista.add(pojazd.getNazwa());
+			lista.add(pojazd.getId() + ": " + pojazd.getNazwa());
 		}
 		
 		return lista;

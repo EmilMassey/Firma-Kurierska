@@ -93,4 +93,14 @@ public class Baza_danych {
 		
 		this.aktualizujXml();		
 	}
+	
+	public void edytujRekord(String id, String nazwa_elementu, String nowa_wartosc) throws Exception {
+		Node rekord = (Node) this.xpath.compile("//*[@id='" + id + "']/" + nazwa_elementu).evaluate(this.xml, XPathConstants.NODE);
+		if(rekord != null)
+			rekord.setTextContent(nowa_wartosc);
+		else
+			throw new Exception("Nie mamy w bazie takiego rekordu.");
+		
+		this.aktualizujXml();
+	}
 }

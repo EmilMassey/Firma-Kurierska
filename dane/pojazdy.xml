@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><pojazdy>
-    <kolejny_id>1</kolejny_id>
+    <kolejny_id>2</kolejny_id>
 
 	<pojazd id="0">
-        <nazwa>Volkswagen Golf IV</nazwa>
+        <nazwa>Fiat Ducato</nazwa>
         <typ>0</typ>
         <rejestracja>PO 9104J</rejestracja>
         <pojemnosc>325</pojemnosc>
@@ -14,4 +14,4 @@
         <grafika>golf.png</grafika>
     </pojazd>
     
-</pojazdy>
+<pojazd id="1"><poziom_paliwa>78</poziom_paliwa><rejestracja>PO 4408K</rejestracja><pojemnosc>20</pojemnosc><max_pojemnosc_baku>84</max_pojemnosc_baku><grafika>lambo.png</grafika><predkosc_max>250</predkosc_max><spalanie>19.32</spalanie><nazwa>Lamborghini Diablo</nazwa><typ_ladunku>6</typ_ladunku><typ>6</typ></pojazd></pojazdy>

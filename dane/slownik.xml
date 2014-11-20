@@ -52,15 +52,46 @@
 			<slowo mnoga="true">podajcie</slowo>
 			<slowo mnoga="false">zdaj</slowo>
 			<slowo mnoga="true">zdajcie</slowo>
+			<slowo mnoga="false">wypisz</slowo>
+			<slowo mnoga="false">wypiszmy</slowo>
+			<slowo mnoga="false">wypisac</slowo>
+			<slowo mnoga="true">wypiszcie</slowo>
 		</akcja>
 		<akcja nazwa="dodanie" typ="zarzadzanie">
 			<slowo mnoga="false">dodaj</slowo>
+			<slowo mnoga="true">dodajcie</slowo>
+			<slowo mnoga="true">dodajmy</slowo>
+			<slowo mnoga="false">dodac</slowo>
 			<slowo mnoga="false">nowa</slowo>
 			<slowo mnoga="false">nowe</slowo>
+			<slowo mnoga="false">nowy</slowo>
 			<slowo mnoga="false">kolejny</slowo>
 			<slowo mnoga="false">kolejna</slowo>
 			<slowo mnoga="true">kolejne</slowo>
 			<slowo mnoga="true">kolejni</slowo>
+		</akcja>
+		<akcja nazwa="usuwanie" typ="zarzadzanie">
+			<slowo mnoga="false">usun</slowo>
+			<slowo mnoga="false">usunac</slowo>
+			<slowo mnoga="true">usunmy</slowo>
+			<slowo mnoga="true">usuncie</slowo>
+			<slowo mnoga="true">wykreslcie</slowo>
+			<slowo mnoga="true">wykreslmy</slowo>
+			<slowo mnoga="false">wykresl</slowo>
+			<slowo mnoga="false">wykreslic</slowo>
+		</akcja>
+		<akcja nazwa="edycja" typ="zarzadzanie">
+			<slowo mnoga="false">edytuj</slowo>
+			<slowo mnoga="true">edytujcie</slowo>
+			<slowo mnoga="true">edytujmy</slowo>
+			<slowo mnoga="false">edytowac</slowo>
+			<slowo mnoga="false">edycja</slowo>
+			<slowo mnoga="false">edycji</slowo>
+			<slowo mnoga="false">zmiana</slowo>
+			<slowo mnoga="false">zmienic</slowo>
+			<slowo mnoga="false">zmien</slowo>
+			<slowo mnoga="true">zmiencie</slowo>
+			<slowo mnoga="true">zmienmy</slowo>
 		</akcja>
 	</akcje>
 	

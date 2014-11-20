@@ -1,7 +1,5 @@
 package obiekty;
 
-import java.util.Random;
-
 public class Pojazd {
 	private int id;
 	private String nazwa;					// Nazwa pojazdu
@@ -70,20 +68,6 @@ public class Pojazd {
 
 	public void setRejestracja(String rejestracja) {
 		this.rejestracja = rejestracja;
-	}
-	
-	public String generujRejestracje(String rej) {
-		String litery = "ABCDEFGHIJKLMNOPQRSTUWXYZ";
-		
-		rej += " ";
-		
-		Random generator = new Random();
-		
-		for(int i=0; i<4; i++)
-			rej += Integer.toString(generator.nextInt(9));
-		rej += litery.charAt(generator.nextInt(litery.length()-1));
-		
-		return rej;
 	}
 
 

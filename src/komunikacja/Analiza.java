@@ -1,12 +1,16 @@
 package komunikacja;
 
 import java.lang.String;
+import java.util.ArrayList;
+
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
+
 import java.io.File;
 
 public class Analiza {
@@ -83,5 +87,39 @@ public class Analiza {
 		}
 		Obiekt obiekt = new Obiekt(false);
 		return obiekt;
+	}
+	
+	public String okreslArgument(String komenda) {
+		int start = komenda.indexOf("'") + 1;
+		int koniec = komenda.indexOf("'", start);
+		
+		if(start == 0 || koniec == start)
+			return "";
+		if(koniec == -1)
+			return komenda.substring(start);
+		
+		return komenda.substring(start, koniec);
+	}
+	
+	public ArrayList <String> okreslArgumenty(String komenda) {
+		ArrayList <String> argumenty = new ArrayList <String>();
+		
+		int start = komenda.indexOf("'") + 1;
+		int koniec = komenda.indexOf("'", start);
+		
+		while(start != 0 && koniec != -1) {			
+			if(koniec != start) {			
+				if(koniec == -1)
+					argumenty.add(komenda.substring(start));
+				else				
+					argumenty.add(komenda.substring(start, koniec));
+			} else
+				argumenty.add("");
+			
+			start = komenda.indexOf("'", koniec+1) + 1;
+			koniec = komenda.indexOf("'", start);
+		}
+		
+		return argumenty;
 	}
 }

@@ -1,4 +1,33 @@
-Firma-Kurierska
+Firma Kurierska
 ===============
 
-Projekt na KCK
+Opis projektu
+---------------
+Aplikacja **Firma Kurierska** to projekt realizowany przez dwóch studentów w ramach æwiczeñ z przedmiotu *Komunikacja cz³owiek - komputer*  
+na wydziale Matematyki i Informatyki Uniwersytetu Adama Mickiewicza w Poznaniu.  
+  
+Program jest napisany w jêzyku *Java*. Jego zadaniem jest symulacja dzia³ania pewnej firmy kurierskiej. Przedsiêbiorstwo posiada wiele  
+ró¿nego rodzaju pojazdów. Ka¿dy z nich ma okreœlon¹ pojemnoœæ i typ towaru, który mo¿e przywoziæ. Ciê¿arówki i samochody posiadaj¹ tak¿e  
+takie parametry jak prêdkoœæ maksymalna, œrednie spalanie itp. Wa¿nym elementem programu jest mapa, na której znajduj¹ siê obiekty,  
+takie jak sklepy, gospodarstwa domowe, magazyny itp. Poruszaj¹ siê na niej pojazdy. Ka¿da ulica ma swoj¹ nazwê.  
+Polecenia wydawane s¹ s³ownie w konsoli, w której mo¿emy nawi¹zaæ rozmowê z kierowcami.  
+  
+### Przyk³adowe polecenia, jakie mo¿na wydaæ w konsoli:  
+* Czy mo¿esz mi powiedzieæ, jakie pojazdy mamy w tej chwili w naszej firmie?
+* W³aœnie sprzedaliœmy niepotrzebn¹ ciê¿arówkê. Móg³byœ wykreœliæ z naszej listy pojazd o identyfikatorze '5'?
+* Proszê, dodaj do naszej bazy samochód 'Volkswagen Golf IV', '7', '325', '4', '171', '7.2', '40', '55', 'golf.png'.
+* Zmieñmy w naszej bazie nazwê auta o numerze '2', czyli VW Golfa IV na 'Ferrari'.  
+  
+### Faza 1 *dd.mm.yyyy*
+* uzupe³niæ
+  
+### Faza 2 *dd.mm.yyyy*
+* uzupe³niæ
+  
+### Faza 3 *21.11.2014*
+* przepisany kod z PHP do Javy
+* dodaliœmy nowe wyra¿enia do s³ownika
+* lepsza analiza tekstu
+* obs³uga argumentów w poleceniach
+* dodaliœmy klasê budynków
+* dodane kilka przyk³adowych pojazdów
