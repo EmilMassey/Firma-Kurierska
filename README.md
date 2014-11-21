@@ -3,31 +3,38 @@ Firma Kurierska
 
 Opis projektu
 ---------------
-Aplikacja **Firma Kurierska** to projekt realizowany przez dwóch studentów w ramach æwiczeñ z przedmiotu *Komunikacja cz³owiek - komputer*
+Aplikacja **Firma Kurierska** to projekt realizowany przez dwÃ³ch studentÃ³w w ramach Ä‡wiczeÅ„ z przedmiotu *Komunikacja czÅ‚owiek - komputer*
 na wydziale Matematyki i Informatyki Uniwersytetu Adama Mickiewicza w Poznaniu.  
   
-Program jest napisany w jêzyku *Java*. Jego zadaniem jest symulacja dzia³ania pewnej firmy kurierskiej. Przedsiêbiorstwo posiada wiele
-ró¿nego rodzaju pojazdów. Ka¿dy z nich ma okreœlon¹ pojemnoœæ i typ towaru, który mo¿e przywoziæ. Ciê¿arówki i samochody posiadaj¹ tak¿e
-takie parametry jak prêdkoœæ maksymalna, œrednie spalanie itp. Wa¿nym elementem programu jest mapa, na której znajduj¹ siê obiekty,
-takie jak sklepy, gospodarstwa domowe, magazyny itp. Poruszaj¹ siê na niej pojazdy. Ka¿da ulica ma swoj¹ nazwê.
-Polecenia wydawane s¹ s³ownie w konsoli, w której mo¿emy nawi¹zaæ rozmowê z kierowcami.  
+Program jest napisany w jÄ™zyku *Java*. Jego zadaniem jest symulacja dziaÅ‚ania pewnej firmy kurierskiej. PrzedsiÄ™biorstwo posiada wiele
+rÃ³Å¼nego rodzaju pojazdÃ³w. KaÅ¼dy z nich ma okreÅ›lonÄ… pojemnoÅ›Ä‡ i typ towaru, ktÃ³ry moÅ¼e przywoziÄ‡. CiÄ™Å¼arÃ³wki i samochody posiadajÄ… takÅ¼e
+takie parametry jak prÄ™dkoÅ›Ä‡ maksymalna, Å›rednie spalanie itp. WaÅ¼nym elementem programu jest mapa, na ktÃ³rej znajdujÄ… siÄ™ obiekty,
+takie jak sklepy, gospodarstwa domowe, magazyny itp. PoruszajÄ… siÄ™ na niej pojazdy. KaÅ¼da ulica ma swojÄ… nazwÄ™.
+Polecenia wydawane sÄ… sÅ‚ownie w konsoli, w ktÃ³rej moÅ¼emy nawiÄ…zaÄ‡ rozmowÄ™ z kierowcami.  
   
-### Przyk³adowe polecenia, jakie mo¿na wydaæ w konsoli:  
-* Czy mo¿esz mi powiedzieæ, jakie pojazdy mamy w tej chwili w naszej firmie?
-* W³aœnie sprzedaliœmy niepotrzebn¹ ciê¿arówkê. Móg³byœ wykreœliæ z naszej listy pojazd o identyfikatorze '5'?
-* Proszê, dodaj do naszej bazy samochód 'Volkswagen Golf IV', '7', '325', '4', '171', '7.2', '40', '55', 'golf.png'.
-* Zmieñmy w naszej bazie nazwê auta o numerze '2', czyli VW Golfa IV na 'Ferrari'.  
+### PrzykÅ‚adowe polecenia, jakie moÅ¼na wydaÄ‡ w konsoli:  
+* Czy moÅ¼esz mi powiedzieÄ‡, jakie pojazdy mamy w tej chwili w naszej firmie?
+* WÅ‚aÅ›nie sprzedaliÅ›my niepotrzebnÄ… ciÄ™Å¼arÃ³wkÄ™. MÃ³gÅ‚byÅ› wykreÅ›liÄ‡ z naszej listy pojazd o identyfikatorze '5'?
+* ProszÄ™, dodaj do naszej bazy samochÃ³d 'Volkswagen Golf IV', '7', '325', '4', '171', '7.2', '40', '55', 'golf.png'.
+* ZmieÅ„my w naszej bazie nazwÄ™ auta o numerze '2', czyli VW Golfa IV na 'Ferrari'.  
   
-### Faza 1 *dd.mm.yyyy*
-* uzupe³niæ
+### Faza 1
+*24.10.2014*
+* stworzenie sÅ‚ownika
+* analiza sÅ‚Ã³w
+* obsÅ‚uga lini komend
   
-### Faza 2 *dd.mm.yyyy*
-* uzupe³niæ
+### Faza 2
+*7.11.2014*
+* stworzenie mapy
+* sterowanie agentem
+* nowe wyraÅ¼enia w sÅ‚owniku
   
-### Faza 3 *21.11.2014*
+### Faza 3
+*21.11.2014*
 * przepisany kod z PHP do Javy
-* dodaliœmy nowe wyra¿enia do s³ownika
+* dodaliÅ›my nowe wyraÅ¼enia do sÅ‚ownika
 * lepsza analiza tekstu
-* obs³uga argumentów w poleceniach
-* dodaliœmy klasê budynków
-* dodane kilka przyk³adowych pojazdów
+* obsÅ‚uga argumentÃ³w w poleceniach
+* dodaliÅ›my klasÄ™ budynkÃ³w
+* dodane kilka przykÅ‚adowych pojazdÃ³w
