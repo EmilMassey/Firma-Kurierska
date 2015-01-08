@@ -9,6 +9,7 @@
 		<typ>rada</typ>
 		<typ>pogawedka</typ>
 		<typ>inne</typ>
+		<typ>sterowanie</typ>
 	</typy>
 
 	<akcje>
@@ -92,6 +93,35 @@
 			<slowo mnoga="false">zmien</slowo>
 			<slowo mnoga="true">zmiencie</slowo>
 			<slowo mnoga="true">zmienmy</slowo>
+		</akcja>
+		<akcja nazwa="gora" typ="sterowanie">
+			<slowo mnoga="false">gora</slowo>
+			<slowo mnoga="false">gore</slowo>
+			<slowo mnoga="false">gory</slowo>
+			<slowo mnoga="false">wyzej</slowo>
+		</akcja>
+		<akcja nazwa="dol" typ="sterowanie">
+			<slowo mnoga="false">dol</slowo>
+			<slowo mnoga="false">nizej</slowo>
+		</akcja>
+		<akcja nazwa="prawo" typ="sterowanie">
+			<slowo mnoga="false">prawo</slowo>
+			<slowo mnoga="false">prawa</slowo>
+		</akcja>
+		<akcja nazwa="lewo" typ="sterowanie">
+			<slowo mnoga="false">lewo</slowo>
+			<slowo mnoga="false">lewa</slowo>
+		</akcja>
+		<akcja nazwa="wspolrzedne" typ="raport">
+		    <slowo mnoga="true">wspolrzedne</slowo>
+		    <slowo mnoga="true">wspolrzednych</slowo>
+		    <slowo mnoga="false">wspolrzedna</slowo>
+		    <slowo mnoga="false">wspolrzednej</slowo>
+		    <slowo mnoga="false">gdzie</slowo>
+		    <slowo mnoga="false">znalezc</slowo>
+		    <slowo mnoga="false">znajdz</slowo>
+		    <slowo mnoga="false">miejsce</slowo>
+		    <slowo mnoga="false">miejscu</slowo>
 		</akcja>
 	</akcje>
 	

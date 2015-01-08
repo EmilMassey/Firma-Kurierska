@@ -2,7 +2,7 @@ package aplikacja;
 
 import java.util.Scanner;
 
-public class Start {
+/*public class Start {
 
 	public static void main(String[] args) {
 		Kontroler kontroler = new Kontroler();
@@ -22,4 +22,4 @@ public class Start {
 		
 		scanner.close();
 	}
-}
+}*/

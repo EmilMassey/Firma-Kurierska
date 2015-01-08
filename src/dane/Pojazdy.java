@@ -2,6 +2,7 @@ package dane;
 import obiekty.Pojazd;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
@@ -13,7 +14,7 @@ import org.w3c.dom.NodeList;
 
 public class Pojazdy {
 	private Baza_danych baza_danych;
-	private ArrayList <Pojazd> pojazdy;
+	private Map <Integer, Pojazd> pojazdy;
 	
 	public Pojazdy() throws Exception {
 		try {
@@ -26,7 +27,7 @@ public class Pojazdy {
 	
 	private void zaladujListePojazdow() throws Exception {
 		try {
-			this.pojazdy = new ArrayList <Pojazd>();
+			this.pojazdy = new HashMap <Integer, Pojazd>();
 			
 			NodeList lista = (NodeList)baza_danych.xpath.compile("//pojazd").evaluate(baza_danych.xml, XPathConstants.NODESET);
 			for(int i=0; i<lista.getLength(); i++) {
@@ -44,9 +45,11 @@ public class Pojazdy {
 							Float.parseFloat(p.getElementsByTagName("spalanie").item(0).getTextContent()),
 							Float.parseFloat(p.getElementsByTagName("poziom_paliwa").item(0).getTextContent()),
 							Float.parseFloat(p.getElementsByTagName("max_pojemnosc_baku").item(0).getTextContent()),
-							p.getElementsByTagName("grafika").item(0).getTextContent()							
+							p.getElementsByTagName("grafika").item(0).getTextContent(),
+							Integer.parseInt(p.getElementsByTagName("wspolrzedne").item(0).getTextContent().split("x")[0]),
+							Integer.parseInt(p.getElementsByTagName("wspolrzedne").item(0).getTextContent().split("x")[1])
 						);
-					this.pojazdy.add(poj);
+					this.pojazdy.put(Integer.parseInt(p.getAttribute("id")), poj);
 				}
 			}
 			
@@ -92,10 +95,19 @@ public class Pojazdy {
 	public ArrayList <String> listaNazwPojazdow() {
 		ArrayList <String> lista = new ArrayList <String>();
 		
-		for(Pojazd pojazd : this.pojazdy) {
-			lista.add(pojazd.getId() + ": " + pojazd.getNazwa());
+		for(Map.Entry<Integer, Pojazd> pojazd : this.pojazdy.entrySet()) {
+			lista.add(pojazd.getValue().getId() + ": " + pojazd.getValue().getNazwa());
 		}
 		
 		return lista;
+	}
+	
+	public int[] podajWspolrzedne(int id) throws Exception {
+		if(this.pojazdy.containsKey(id))
+			return this.pojazdy.get(id).getWspolrzedne();
+		else
+			throw new Exception("Nie mamy takiego pojazdu.");
+			
+			
 	}
 }
