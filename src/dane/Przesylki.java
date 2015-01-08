@@ -50,10 +50,12 @@ public class Przesylki {
 		}
 	}
 	
-	public void nowaPrzesylka(Map <String, String> dane) throws Exception {
+	public int nowaPrzesylka(Map <String, String> dane) throws Exception {
 		try {
-			this.baza_danych.dodajRekord("przesylka", dane);
+			int id = this.baza_danych.dodajRekord("przesylka", dane);
 			this.zaladujListePrzesylek();
+			
+			return id;
 		} catch (Exception e) {
 			throw new Exception("Szefie, nie mogê sobiê poradziæ z dodaniem nowej przesy³ki. " + e.getMessage());
 		}

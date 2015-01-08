@@ -17,6 +17,8 @@ Polecenia wydawane s¹ s³ownie w konsoli, w której mo¿emy nawi¹zaæ rozmowê z kier
 * W³aœnie sprzedaliœmy niepotrzebn¹ ciê¿arówkê. Móg³byœ wykreœliæ z naszej listy pojazd o identyfikatorze '5'?
 * Proszê, dodaj do naszej bazy samochód 'Volkswagen Golf IV', '7', '325', '4', '171', '7.2', '40', '55', 'golf.png'.
 * Zmieñmy w naszej bazie nazwê auta o numerze '2', czyli VW Golfa IV na 'Ferrari'.  
+* Wygeneruj '5' nowych, losowych zleceñ
+* Usuñmy zlecenie nr '4'. To by³a pomy³ka.
   
 ### Faza 1
 *24.10.2014*
@@ -38,3 +40,17 @@ Polecenia wydawane s¹ s³ownie w konsoli, w której mo¿emy nawi¹zaæ rozmowê z kier
 * obs³uga argumentów w poleceniach
 * dodaliœmy klasê budynków
 * dodane kilka przyk³adowych pojazdów
+
+### Faza 4
+*09.01.2015*
+* po³¹czenie kontrolera i programu obs³uguj¹cego okno
+* dodane klasy przesylki i zlecenia i ich obs³uga
+* dodana mo¿liwoœæ generowania dowolnej iloœci losowych zleceñ
+
+----------------
+### Do zrobienia:
+* dodaæ klasê kierowców
+* obs³uga zleceñ
+* musimy inaczej generowaæ wspó³rzêdne w zleceniach?
+* (wyszukiwanie drogi - jak zostanie czas)
+* (mo¿e dodatkowy poziom w jêzyku?)

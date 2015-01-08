@@ -102,12 +102,25 @@ public class Pojazdy {
 		return lista;
 	}
 	
-	public int[] podajWspolrzedne(int id) throws Exception {
+	public ArrayList <Integer> listaIdentyfikatorow() {				// na potrzeby generowania zleceñ
+		ArrayList <Integer> lista = new ArrayList <Integer>();
+		for(int id : this.pojazdy.keySet()) {
+			lista.add(id);
+		}
+		
+		return lista;
+	}
+	
+	public boolean czyIstnieje(int id) {
 		if(this.pojazdy.containsKey(id))
+			return true;
+		return false;
+	}
+	
+	public int[] podajWspolrzedne(int id) throws Exception {
+		if(this.czyIstnieje(id))
 			return this.pojazdy.get(id).getWspolrzedne();
 		else
 			throw new Exception("Nie mamy takiego pojazdu.");
-			
-			
 	}
 }

@@ -7,17 +7,20 @@ import java.util.Map;
 import komunikacja.*;
 import dane.Pojazdy;
 import dane.Przesylki;
+import dane.Zlecenia;
 
 public class Kontroler {
 	private Analiza analiza;
 	private Pojazdy pojazdy;
 	private Przesylki przesylki;
+	private Zlecenia zlecenia;
 	
 	public Kontroler() {
 		try {
 			this.analiza = new Analiza("dane/slownik.xml");
 			this.pojazdy = new Pojazdy();
 			this.przesylki = new Przesylki();
+			this.zlecenia = new Zlecenia();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -51,6 +54,53 @@ public class Kontroler {
 		
 		if(typ.czyIstnieje() && akcja.czyIstnieje() && obiekt.czyIstnieje()) {		
 			switch(obiekt.getNazwa()) {
+				case "zlecenie":
+					switch(typ.getNazwa()) {
+						case "ustawienie":
+							switch(akcja.getNazwa()) {
+								case "wygeneruj":
+									if(argument != "") {
+										zlecenia.wygenerujZlecenia(Integer.parseInt(argument));
+										odpowiedz = "Wygenerowa³em zlecenia!";
+									} else {
+										throw new Exception("Ile zleceñ wygenerowaæ?");
+									}
+									break;
+							}
+							break;
+						case "zarzadzanie":
+							switch(akcja.getNazwa()) {
+								case "dodanie":
+									Map <String, String> dane = new HashMap<String, String>();
+									if(!argumenty.isEmpty() && argumenty.size() >= 2) {
+										dane.put("pojazd", argumenty.get(0));
+										dane.put("przesylka", argumenty.get(1));	
+										dane.put("startX", argumenty.get(2));		
+										dane.put("startY", argumenty.get(3));	
+										dane.put("celX", argumenty.get(4));
+										dane.put("celY", argumenty.get(5));
+										dane.put("dataNadania", argumenty.get(6));	
+										dane.put("dataOdbioru", "2999-0-1");
+										dane.put("deadline", argumenty.get(7));	
+										dane.put("wykonane", "false");
+										zlecenia.noweZlecenie(dane);
+										odpowiedz = "Doda³em zlecenie!";
+									} else {
+										throw new Exception("Muszê znaæ takie informacje o zleceniu: id pojazdu, id przesy³ki, wspó³rzêdna X Ÿród³a, wspó³rzêdna Y Ÿród³a, wspo³rzêdna X celu, wspó³rzêdna Y celu, data nadania i termin dostarczenia");
+									}
+									break;
+								case "usuwanie":
+									if(argument != "") {
+										zlecenia.usunZlecenie(argument);
+										odpowiedz = "Wykreœli³em zlecenie.";										
+									} else {
+										throw new Exception("Które zlecenie usun¹æ? Jaki identyfikator?");
+									}
+									break;
+							}
+							break;
+					}
+					break;
 				case "paczka":
 					switch(typ.getNazwa()) {
 						case "raport":
@@ -87,6 +137,7 @@ public class Kontroler {
 									}
 									break;
 							}
+							break;
 					}
 					break;
 				case "pojazd":

@@ -29,7 +29,7 @@ public class Miasto extends JFrame implements ActionListener, KeyListener {
     public Timer timer = new Timer(10, this);
 
     public Miasto() {
-            
+    	
             wymiar = Toolkit.getDefaultToolkit().getScreenSize();
             
             //----------------Ekran z mapÄ…

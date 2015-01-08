@@ -123,6 +123,16 @@
 		    <slowo mnoga="false">miejsce</slowo>
 		    <slowo mnoga="false">miejscu</slowo>
 		</akcja>
+		<akcja nazwa="wygeneruj" typ="ustawienie">
+		    <slowo mnoga="true">wygenerujcie</slowo>
+		    <slowo mnoga="false">wygeneruj</slowo>
+		    <slowo mnoga="false">wygenerowac</slowo>
+		    <slowo mnoga="false">generuj</slowo>
+		    <slowo mnoga="true">generujcie</slowo>
+		    <slowo mnoga="false">generowac</slowo>
+		    <slowo mnoga="false">wygenerowanie</slowo>
+		    <slowo mnoga="false">generowanie</slowo>
+		</akcja>
 	</akcje>
 	
 	<obiekty>
@@ -163,6 +173,14 @@
 			<slowo mnoga="false">dostawa</slowo>
 			<slowo mnoga="true">dostaw</slowo>
 			<slowo mnoga="false">dostawy</slowo>
+		</obiekt>
+		<obiekt nazwa="zlecenie">
+			<slowo mnoga="false">zlecenie</slowo>
+			<slowo mnoga="true">zlecenia</slowo>
+			<slowo mnoga="false">zadanie</slowo>
+			<slowo mnoga="true">zadania</slowo>
+			<slowo mnoga="true">zleceniom</slowo>
+			<slowo mnoga="true">zlecen</slowo>
 		</obiekt>
 	</obiekty>
 	

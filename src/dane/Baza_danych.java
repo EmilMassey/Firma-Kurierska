@@ -64,7 +64,7 @@ public class Baza_danych {
 		}
 	}
 
-	public void dodajRekord(String nazwa_rekordu, Map <String, String> dane) {
+	public int dodajRekord(String nazwa_rekordu, Map <String, String> dane) {
 		Node root = this.xml.getFirstChild();
 		
 		int id = Integer.parseInt(this.xml.getElementsByTagName("kolejny_id").item(0).getTextContent());
@@ -81,6 +81,8 @@ public class Baza_danych {
 		
 		this.xml.getElementsByTagName("kolejny_id").item(0).setTextContent(Integer.toString(id+1));
 		this.aktualizujXml();
+		
+		return id;																		// Zwraca identyfikator dodanego rekordu
 	}
 	
 	public void usunRekord(String id) throws Exception {
