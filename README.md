@@ -8,8 +8,8 @@ na wydziale Matematyki i Informatyki Uniwersytetu Adama Mickiewicza w Poznaniu.
   
 Program jest napisany w jêzyku *Java*. Jego zadaniem jest symulacja dzia³ania pewnej firmy kurierskiej. Przedsiêbiorstwo posiada wiele
 ró¿nego rodzaju pojazdów. Ka¿dy z nich ma okreœlon¹ pojemnoœæ i typ towaru, który mo¿e przywoziæ. Ciê¿arówki i samochody posiadaj¹ tak¿e
-takie parametry jak prêdkoœæ maksymalna, œrednie spalanie itp. Wa¿nym elementem programu jest mapa, na której znajduj¹ siê obiekty,
-takie jak sklepy, gospodarstwa domowe, magazyny itp. Poruszaj¹ siê na niej pojazdy. Ka¿da ulica ma swoj¹ nazwê.
+takie parametry jak: prêdkoœæ maksymalna, œrednie spalanie itp. Wa¿nym elementem programu jest mapa, na której znajduj¹ siê obiekty,
+takie jak: sklepy, gospodarstwa domowe, magazyny itp. Poruszaj¹ siê na niej pojazdy. Ka¿da ulica ma swoj¹ nazwê.
 Polecenia wydawane s¹ s³ownie w konsoli, w której mo¿emy nawi¹zaæ rozmowê z kierowcami.  
   
 ### Przyk³adowe polecenia, jakie mo¿na wydaæ w konsoli:  
