@@ -2,27 +2,27 @@
 <nieruchomosci>
 	<kolejny_id>0</kolejny_id>
 	<nieruchomosc id="0">
-		<ulica>3 Maja</ulica>
+		<ulica>Akacjowa</ulica>
 		<numer>1</numer>
 		<wspolrzedne>0x17</wspolrzedne>
 	</nieruchomosc>
 	<nieruchomosc id="1">
-		<ulica>3 Maja</ulica>
+		<ulica>Akacjowa</ulica>
 		<numer>2</numer>
 		<wspolrzedne>1x17</wspolrzedne>
 	</nieruchomosc>
 	<nieruchomosc id="2">
-		<ulica>3 Maja</ulica>
+		<ulica>Akacjowa</ulica>
 		<numer>3</numer>
 		<wspolrzedne>2x17</wspolrzedne>
 	</nieruchomosc>
 	<nieruchomosc id="3">
-		<ulica>3 Maja</ulica>
+		<ulica>Akacjowa</ulica>
 		<numer>4</numer>
 		<wspolrzedne>3x17</wspolrzedne>
 	</nieruchomosc>
 	<nieruchomosc id="4">
-		<ulica>3 Maja</ulica>
+		<ulica>Akacjowa</ulica>
 		<numer>5</numer>
 		<wspolrzedne>4x17</wspolrzedne>
 	</nieruchomosc>

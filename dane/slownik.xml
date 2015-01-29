@@ -23,6 +23,13 @@
 			<slowo mnoga="true">zaniescie</slowo>
 			<slowo mnoga="false">przywiez</slowo>
 			<slowo mnoga="true">przywiezcie</slowo>
+			<slowo mnoga="false">zostaw</slowo>
+		</akcja>
+		<akcja nazwa="zabieranie" typ="polecenie">
+			<slowo mnoga="false">zabierz</slowo>
+			<slowo mnoga="false">wez</slowo>
+			<slowo mnoga="true">odbierzcie</slowo>
+			<slowo mnoga="false">odbierz</slowo>
 		</akcja>
 		<akcja nazwa="ile" typ="raport">
 			<slowo mnoga="false">ile</slowo>
@@ -123,6 +130,7 @@
 			<slowo mnoga="false">kierownice</slowo>
 			<slowo mnoga="true">stery</slowo>
 			<slowo mnoga="false">ster</slowo>
+			<slowo mnoga="false">steruj</slowo>
 		</akcja>
 		<akcja nazwa="wspolrzedne" typ="raport">
 		    <slowo mnoga="true">wspolrzedne</slowo>

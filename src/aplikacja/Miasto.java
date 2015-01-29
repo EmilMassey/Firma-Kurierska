@@ -7,7 +7,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.File;
+import java.io.IOException;
 
+import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -43,7 +46,7 @@ public class Miasto extends JFrame implements ActionListener, KeyListener {
             
             //----------------Ekran z mapÄ…
             frame1 = new JFrame("Miasto");
-            frame1.setSize(25*30, 25*30);
+            frame1.setSize(25*30, 25*30 + 25);				// + 25 żeby dodać pasek górny
             frame1.setVisible(true);
             frame1.setResizable(false);
             frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -82,6 +85,20 @@ public class Miasto extends JFrame implements ActionListener, KeyListener {
             	this.pojazdy = new Pojazdy();
             	this.sterowanyPojazd = this.pojazdy.listaIdentyfikatorow().get(0);			// pierwszy ze wszystkich pojazdów domyślnie
             } catch (Exception e) {}
+            try {                
+                this.renderpanel.miasto = ImageIO.read(new File("grafika/mapa.bmp"));
+                this.renderpanel.budynki = ImageIO.read(new File("grafika/budynki.gif"));
+                this.renderpanel.grafikiPojazdow.put("duzy_dol.gif", ImageIO.read(new File("grafika/duzy_dol.gif")));
+                this.renderpanel.grafikiPojazdow.put("duzy_gora.gif", ImageIO.read(new File("grafika/duzy_gora.gif")));
+                this.renderpanel.grafikiPojazdow.put("duzy_lewo.gif", ImageIO.read(new File("grafika/duzy_lewo.gif")));
+                this.renderpanel.grafikiPojazdow.put("duzy_prawo.gif", ImageIO.read(new File("grafika/duzy_prawo.gif")));
+                this.renderpanel.grafikiPojazdow.put("sredni_dol.gif", ImageIO.read(new File("grafika/sredni_dol.gif")));
+                this.renderpanel.grafikiPojazdow.put("sredni_gora.gif", ImageIO.read(new File("grafika/sredni_gora.gif")));
+                this.renderpanel.grafikiPojazdow.put("sredni_lewo.gif", ImageIO.read(new File("grafika/sredni_lewo.gif")));
+                this.renderpanel.grafikiPojazdow.put("sredni_prawo.gif", ImageIO.read(new File("grafika/sredni_prawo.gif")));
+             } catch (IOException ex) {
+                  System.out.println("Nie udało się stworzyć mapy " + ex.getMessage());
+             }
         }
         
         public void Start() {
@@ -124,29 +141,37 @@ public class Miasto extends JFrame implements ActionListener, KeyListener {
             case 37:
             	try {
             		Point noweWspolrzedne = new Point((int)pojazdy.podajWspolrzedne((int)this.sterowanyPojazd).getX() - 1, (int)pojazdy.podajWspolrzedne(this.sterowanyPojazd).getY());
-            		if(nieruchomosci.nawigacja.czyUlica(nieruchomosci.mapa, noweWspolrzedne))
+            		if(nieruchomosci.nawigacja.czyUlica(nieruchomosci.mapa, noweWspolrzedne)) {
             			pojazdy.zmienPozycjePojazdu(this.sterowanyPojazd, noweWspolrzedne);
+            			pojazdy.zmienGrafike(sterowanyPojazd, "lewo");
+            		}
             	} catch (Exception e) {}
             break;
             case 38:
             	try {
             		Point noweWspolrzedne = new Point((int)pojazdy.podajWspolrzedne((int)this.sterowanyPojazd).getX(), (int)pojazdy.podajWspolrzedne(this.sterowanyPojazd).getY() - 1);
-            		if(nieruchomosci.nawigacja.czyUlica(nieruchomosci.mapa, noweWspolrzedne))
+            		if(nieruchomosci.nawigacja.czyUlica(nieruchomosci.mapa, noweWspolrzedne)) {
             			pojazdy.zmienPozycjePojazdu(this.sterowanyPojazd, noweWspolrzedne);
+            			pojazdy.zmienGrafike(sterowanyPojazd, "gora");
+            		}
             	} catch (Exception e) {}
             break;
             case 39:
             	try {
             		Point noweWspolrzedne = new Point((int)pojazdy.podajWspolrzedne((int)this.sterowanyPojazd).getX() + 1, (int)pojazdy.podajWspolrzedne(this.sterowanyPojazd).getY());
-            		if(nieruchomosci.nawigacja.czyUlica(nieruchomosci.mapa, noweWspolrzedne))
+            		if(nieruchomosci.nawigacja.czyUlica(nieruchomosci.mapa, noweWspolrzedne)) {
             			pojazdy.zmienPozycjePojazdu(this.sterowanyPojazd, noweWspolrzedne);
+            			pojazdy.zmienGrafike(sterowanyPojazd, "prawo");
+            		}
             	} catch (Exception e) {}
             break;
             case 40:
             	try {
             		Point noweWspolrzedne = new Point((int)pojazdy.podajWspolrzedne((int)this.sterowanyPojazd).getX(), (int)pojazdy.podajWspolrzedne(this.sterowanyPojazd).getY() + 1);
-            		if(nieruchomosci.nawigacja.czyUlica(nieruchomosci.mapa, noweWspolrzedne))
+            		if(nieruchomosci.nawigacja.czyUlica(nieruchomosci.mapa, noweWspolrzedne)) {
             			pojazdy.zmienPozycjePojazdu(this.sterowanyPojazd, noweWspolrzedne);
+            			pojazdy.zmienGrafike(sterowanyPojazd, "dol");
+            		}
             	} catch (Exception e) {}
             break;
         }

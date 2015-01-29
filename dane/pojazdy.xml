@@ -11,8 +11,8 @@
         <spalanie>7.2</spalanie>
         <poziom_paliwa>40</poziom_paliwa>
         <max_pojemnosc_baku>55</max_pojemnosc_baku>
-        <grafika>golf.png</grafika>
-        <wspolrzedne>9x10</wspolrzedne>
+        <grafika>sredni_dol.gif</grafika>
+        <wspolrzedne>20x5</wspolrzedne>
     </pojazd> 
     <pojazd id="1">
         <nazwa>Ford Transit</nazwa>
@@ -24,7 +24,7 @@
         <spalanie>12.2</spalanie>
         <poziom_paliwa>80</poziom_paliwa>
         <max_pojemnosc_baku>55</max_pojemnosc_baku>
-        <grafika>ducato.png</grafika>
-        <wspolrzedne>18x3</wspolrzedne>
+        <grafika>duzy_dol.gif</grafika>
+        <wspolrzedne>12x7</wspolrzedne>
     </pojazd>   
 </pojazdy>

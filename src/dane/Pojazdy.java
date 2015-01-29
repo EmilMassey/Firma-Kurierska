@@ -141,4 +141,26 @@ public class Pojazdy {
 		
 		return lista;
 	}
+	
+	public void zmienGrafike(int id, String grafika) throws Exception {
+		if(this.czyIstnieje(id)) {
+			String stara = this.pojazdy.get(id).getGrafika();
+			grafika = stara.substring(0, stara.indexOf("_") + 1) + grafika + ".gif";
+			this.baza_danych.edytujRekord(Integer.toString(id), "grafika", grafika);
+			this.zaladujListePojazdow();
+		} else
+			throw new Exception("Nie mamy takiego pojazdu.");	
+	}
+	
+	public String podajGrafike(int id) throws Exception {
+		if(this.czyIstnieje(id)) {
+			return this.pojazdy.get(id).getGrafika();
+		} else
+			throw new Exception("Nie mamy takiego pojazdu.");	
+	}
+	
+	public void wezPrzesylke(int id) throws Exception {
+		Zlecenia zlecenia = new Zlecenia();
+		zlecenia.wezPrzesylke(id, this.podajWspolrzedne(id));
+	}
 }

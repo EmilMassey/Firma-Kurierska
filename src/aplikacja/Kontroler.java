@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import mapa.Nawigacja;
 import komunikacja.*;
 import dane.Nieruchomosci;
 import dane.Pojazdy;
@@ -75,6 +74,19 @@ public class Kontroler {
 									break;
 							}
 							break;
+						case "raport":
+							switch(akcja.getNazwa()) {
+								case "pokaz":
+									if(!zlecenia.listaZlecen().isEmpty()) {
+										odpowiedz = "Pozosta³o nam do zrobienia jeszcze:\n";
+										for(String zlecenie : zlecenia.listaZlecen())
+											odpowiedz += zlecenie + "\n";
+									} else {
+										odpowiedz = "Nie mamy ju¿ wiêcej zleceñ :)";
+									}
+								break;
+							}
+							break;
 						case "zarzadzanie":
 							switch(akcja.getNazwa()) {
 								case "dodanie":
@@ -142,6 +154,18 @@ public class Kontroler {
 									} else {
 										throw new Exception("O któr¹ paczkê chodzi? Móg³by Szef podaæ jej identyfikator?");
 									}
+									break;
+							}
+							break;
+						case "polecenie":
+							switch(akcja.getNazwa()) {
+								case "zabieranie":
+									Point cel = zlecenia.wezPrzesylke(miasto.getSterowany(), pojazdy.podajWspolrzedne(miasto.getSterowany()));
+									odpowiedz = "Zabra³em przesy³kê. Muszê j¹ zawieŸæ do " + nieruchomosci.podajAdres(cel);
+									break;
+								case "dostarczanie":
+									zlecenia.dostarcz(miasto.getSterowany(), pojazdy.podajWspolrzedne(miasto.getSterowany()));
+									odpowiedz = "Dostarczy³em paczkê, Szefie.";
 									break;
 							}
 							break;

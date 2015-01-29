@@ -14,10 +14,11 @@ public class Zlecenie {
 	Calendar dataDostarczenia;
 	Calendar deadline;
 	boolean wykonane;
+	boolean wTrakcie;
 	
 	public Zlecenie(int id, int pojazd, int przesylka, int startX, int startY,
 			int celX, int celY, Calendar dataNadania, Calendar dataDostarczenia,
-			Calendar deadline, boolean wykonane) {
+			Calendar deadline, boolean wykonane, boolean wTrakcie) {
 		this.id = id;
 		this.pojazd = pojazd;
 		this.przesylka = przesylka;
@@ -29,6 +30,7 @@ public class Zlecenie {
 		this.dataDostarczenia = dataDostarczenia;
 		this.deadline = deadline;
 		this.wykonane = wykonane;
+		this.wTrakcie = wTrakcie;
 	}
 	public int getId() {
 		return id;
@@ -96,4 +98,10 @@ public class Zlecenie {
 	public void setWykonane(boolean wykonane) {
 		this.wykonane = wykonane;
 	}
+	public boolean isWTrakcie() {
+		return wTrakcie;
+	}
+	public void setWTrakcie(boolean wTrakcie) {
+		this.wTrakcie = wTrakcie;
+	}	
 }

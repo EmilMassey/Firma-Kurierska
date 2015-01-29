@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><przesylki>
-    <kolejny_id>0</kolejny_id></przesylki>
+    <kolejny_id>3</kolejny_id><przesylka id="0"><typ>1</typ><dostarczona>true</dostarczona><waga>1268</waga></przesylka><przesylka id="1"><typ>2</typ><dostarczona>true</dostarczona><waga>1979</waga></przesylka><przesylka id="2"><typ>3</typ><dostarczona>true</dostarczona><waga>200</waga></przesylka></przesylki>
