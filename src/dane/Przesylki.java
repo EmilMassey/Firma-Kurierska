@@ -75,4 +75,9 @@ public class Przesylki {
 		this.baza_danych.usunRekord(id);
 		this.zaladujListePrzesylek();
 	}
+	
+	public void oddajPrzesylke(int id) throws Exception {
+		this.baza_danych.edytujRekord(Integer.toString(id), "dostarczona", "true");
+		this.zaladujListePrzesylek();
+	}
 }

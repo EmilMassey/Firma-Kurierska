@@ -2,12 +2,18 @@ package aplikacja;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Point;
+import java.util.ArrayList;
+
 import javax.swing.JPanel;
 
-public class RenderPanel extends JPanel{
+import dane.Pojazdy;
+
+
+public class RenderPanel extends JPanel {
+    private ArrayList <Point> pozycjePojazdow = new ArrayList <Point> ();
+    public ArrayList <Point> trasa = new ArrayList <Point> ();
     
-    int pozycja_pojazdu_1_x = 9;
-    int pozycja_pojazdu_1_y = 12;
     int Mapa[][] = {
         {1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,4,4,4,4,4,4},
         {1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,4,4,4,4,4,4},
@@ -36,8 +42,14 @@ public class RenderPanel extends JPanel{
         {1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1}
     };
     
-    protected void paintComponent(Graphics g){
-        super.paintComponent(g);
+    protected void paintComponent(Graphics g){		
+        super.paintComponent(g);        
+
+        try {
+        	this.pozycjePojazdow = new Pojazdy().wspolrzedneWszystkich();
+        } catch (Exception e) {}
+        
+        
         g.setColor(Color.BLACK);
         for(int a = 0; a < 25; a++){
             for(int b = 0; b < 25; b++){
@@ -67,12 +79,17 @@ public class RenderPanel extends JPanel{
                     break;
                 }
             }
+        }        
+
+        g.setColor(Color.CYAN);
+        for(Point punkt : this.trasa) {
+        	g.fillOval((int)punkt.getX()*30 + 15, (int)punkt.getY()*30 + 15, 5, 5);
         }
+        
         g.setColor(Color.MAGENTA);
-        g.fillOval(pozycja_pojazdu_1_x*30, pozycja_pojazdu_1_y*30, 29, 29);
-        
-        
+        for(Point pozycja : this.pozycjePojazdow) {
+        	g.fillOval((int)pozycja.getX()*30, (int)pozycja.getY()*30, 29, 29);
+        }
     }
-    
     
 }

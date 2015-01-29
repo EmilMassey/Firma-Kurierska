@@ -57,6 +57,7 @@
 			<slowo mnoga="false">wypiszmy</slowo>
 			<slowo mnoga="false">wypisac</slowo>
 			<slowo mnoga="true">wypiszcie</slowo>
+			<slowo mnoga="false">wyswietl</slowo>
 		</akcja>
 		<akcja nazwa="dodanie" typ="zarzadzanie">
 			<slowo mnoga="false">dodaj</slowo>
@@ -112,11 +113,25 @@
 			<slowo mnoga="false">lewo</slowo>
 			<slowo mnoga="false">lewa</slowo>
 		</akcja>
+		<akcja nazwa="kierowanie" typ="sterowanie">
+			<slowo mnoga="false">kieruj</slowo>
+			<slowo mnoga="false">kierowanie</slowo>
+			<slowo mnoga="false">kierowac</slowo>
+			<slowo mnoga="false">sterowanie</slowo>
+			<slowo mnoga="false">sterowac</slowo>
+			<slowo mnoga="false">kierownica</slowo>
+			<slowo mnoga="false">kierownice</slowo>
+			<slowo mnoga="true">stery</slowo>
+			<slowo mnoga="false">ster</slowo>
+		</akcja>
 		<akcja nazwa="wspolrzedne" typ="raport">
 		    <slowo mnoga="true">wspolrzedne</slowo>
 		    <slowo mnoga="true">wspolrzednych</slowo>
 		    <slowo mnoga="false">wspolrzedna</slowo>
 		    <slowo mnoga="false">wspolrzednej</slowo>
+		</akcja>
+		<akcja nazwa="adres" typ="raport">
+			<slowo mnoga="true">adres</slowo>
 		    <slowo mnoga="false">gdzie</slowo>
 		    <slowo mnoga="false">znalezc</slowo>
 		    <slowo mnoga="false">znajdz</slowo>
@@ -181,6 +196,20 @@
 			<slowo mnoga="true">zadania</slowo>
 			<slowo mnoga="true">zleceniom</slowo>
 			<slowo mnoga="true">zlecen</slowo>
+		</obiekt>
+		<obiekt nazwa="nieruchomosc">
+			<slowo mnoga="false">nieruchomosc</slowo>
+			<slowo mnoga="true">nieruchomosci</slowo>
+			<slowo mnoga="true">budynki</slowo>
+			<slowo mnoga="false">budynek</slowo>
+			<slowo mnoga="false">dom</slowo>
+			<slowo mnoga="false">budynku</slowo>
+		</obiekt>
+		<obiekt nazwa="trasa">		
+			<slowo mnoga="false">trasa</slowo>
+			<slowo mnoga="false">droga</slowo>
+			<slowo mnoga="false">droge</slowo>
+			<slowo mnoga="false">trase</slowo>
 		</obiekt>
 	</obiekty>
 	

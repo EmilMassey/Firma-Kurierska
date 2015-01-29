@@ -1,6 +1,7 @@
 package dane;
 import obiekty.Pojazd;
 
+import java.awt.Point;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -117,10 +118,27 @@ public class Pojazdy {
 		return false;
 	}
 	
-	public int[] podajWspolrzedne(int id) throws Exception {
+	public void zmienPozycjePojazdu(int id, Point pozycja) throws Exception {
+		if(this.czyIstnieje(id)) {
+			this.baza_danych.edytujRekord(Integer.toString(id), "wspolrzedne", (int)pozycja.getX() + "x" + (int)pozycja.getY());
+			this.zaladujListePojazdow();
+		} else
+			throw new Exception("Nie mamy takiego pojazdu.");		
+	}
+	
+	public Point podajWspolrzedne(int id) throws Exception {
 		if(this.czyIstnieje(id))
 			return this.pojazdy.get(id).getWspolrzedne();
 		else
 			throw new Exception("Nie mamy takiego pojazdu.");
+	}
+	
+	public ArrayList <Point> wspolrzedneWszystkich() throws Exception {
+		ArrayList <Point> lista = new ArrayList <Point>();
+		for(Map.Entry<Integer, Pojazd> pojazd : this.pojazdy.entrySet()) {
+			lista.add(pojazd.getValue().getWspolrzedne());
+		}
+		
+		return lista;
 	}
 }

@@ -1,5 +1,7 @@
 package obiekty;
 
+import java.awt.Point;
+
 public class Pojazd {
 	private int id;
 	private String nazwa;								// Nazwa pojazdu
@@ -12,7 +14,7 @@ public class Pojazd {
 	private float poziom_paliwa;						// Poziom paliwa w litrach
 	private float max_pojemnosc_baku;					// Pojemnoœc baku w litrach
 	private String grafika;               				// Grafika reprezentuj¹ca samochód
-	private int wspolrzedne[] = new int[2];				// Wspó³rzêdne pojazdu na mapie
+	private Point wspolrzedne;							// Wspó³rzêdne pojazdu na mapie
 	
 	public Pojazd(int id, String nazwa, int typ, String rejestracja,
 			int pojemnosc, int typ_ladunku, int predkosc_max,
@@ -29,8 +31,7 @@ public class Pojazd {
 		this.poziom_paliwa = poziom_paliwa;
 		this.max_pojemnosc_baku = max_pojemnosc_baku;
 		this.grafika = grafika;
-		this.wspolrzedne[0] = x;
-		this.wspolrzedne[1] = y;
+		this.wspolrzedne = new Point(x, y);
 	}
 
 
@@ -145,12 +146,11 @@ public class Pojazd {
 	
 	
 	public void setWspolrzedne(int x, int y) {
-		this.wspolrzedne[0] = x;
-		this.wspolrzedne[1] = y;
+		this.wspolrzedne = new Point(x, y);
 	}
 	
 	
-	public int[] getWspolrzedne() {
+	public Point getWspolrzedne() {
 		return this.wspolrzedne;
 	}
 	

@@ -12,6 +12,19 @@
         <poziom_paliwa>40</poziom_paliwa>
         <max_pojemnosc_baku>55</max_pojemnosc_baku>
         <grafika>golf.png</grafika>
-        <wspolrzedne>3x5</wspolrzedne>
-    </pojazd>  
+        <wspolrzedne>9x10</wspolrzedne>
+    </pojazd> 
+    <pojazd id="1">
+        <nazwa>Ford Transit</nazwa>
+        <typ>0</typ>
+        <rejestracja>PO 900AJ</rejestracja>
+        <pojemnosc>425</pojemnosc>
+        <typ_ladunku>0</typ_ladunku>
+        <predkosc_max>131</predkosc_max>
+        <spalanie>12.2</spalanie>
+        <poziom_paliwa>80</poziom_paliwa>
+        <max_pojemnosc_baku>55</max_pojemnosc_baku>
+        <grafika>ducato.png</grafika>
+        <wspolrzedne>18x3</wspolrzedne>
+    </pojazd>   
 </pojazdy>

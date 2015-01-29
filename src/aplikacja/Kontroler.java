@@ -1,26 +1,33 @@
 package aplikacja;
 
+import java.awt.Point;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import mapa.Nawigacja;
 import komunikacja.*;
+import dane.Nieruchomosci;
 import dane.Pojazdy;
 import dane.Przesylki;
 import dane.Zlecenia;
 
 public class Kontroler {
+	private Miasto miasto;
 	private Analiza analiza;
 	private Pojazdy pojazdy;
 	private Przesylki przesylki;
 	private Zlecenia zlecenia;
+	private Nieruchomosci nieruchomosci;
 	
-	public Kontroler() {
+	public Kontroler(Miasto miasto) {
 		try {
+			this.miasto = miasto;
 			this.analiza = new Analiza("dane/slownik.xml");
 			this.pojazdy = new Pojazdy();
 			this.przesylki = new Przesylki();
 			this.zlecenia = new Zlecenia();
+			this.nieruchomosci = new Nieruchomosci();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -140,6 +147,53 @@ public class Kontroler {
 							break;
 					}
 					break;
+				case "nieruchomosc":
+					switch(typ.getNazwa()) {
+						case "raport":
+							switch(akcja.getNazwa()) {
+								case "wspolrzedne":
+									if(argument != "") {
+										Point wspolrzedne = nieruchomosci.podajWspolrzedne(argument);
+										odpowiedz = "Adres " + argument + "le¿y na wspó³rzêdnych " + (int)wspolrzedne.getX() + "x" + (int)wspolrzedne.getY();
+									} else {
+										throw new Exception("Jaki adres?");
+									}
+									break;
+								case "adres":
+									if(!argumenty.isEmpty() && argumenty.size() >= 2)
+										odpowiedz = nieruchomosci.podajAdres(new Point(Integer.parseInt(argumenty.get(0)), Integer.parseInt(argumenty.get(1))));
+									else
+										throw new Exception("Jakie wspó³rzêdne?");
+									break;
+							}
+							break;
+					}
+					break;
+				case "trasa":
+					switch(typ.getNazwa()) {
+						case "raport":
+							switch(akcja.getNazwa()) {
+								case "pokaz":
+									if(argument != "") {
+										Point wspolrzedne = nieruchomosci.podajWspolrzedne(argument);
+										this.miasto.renderpanel.trasa = this.nieruchomosci.nawigacja.pokazDroge(this.nieruchomosci.mapa, pojazdy.podajWspolrzedne(this.miasto.getSterowany()), wspolrzedne).getPunkty();
+										odpowiedz = "Proszê bardzo";
+									} else {
+										throw new Exception("Dok¹d mam nawigowaæ?");
+									}										
+									break;
+							}
+							break;
+						case "zarzadzanie":
+							switch(akcja.getNazwa()) {
+								case "usuwanie":
+									this.miasto.renderpanel.trasa.clear();
+									odpowiedz = "Ju¿ nie pokazujê trasy";
+									break;
+							}
+							break;
+					}
+					break;
 				case "pojazd":
 					switch(typ.getNazwa()) {
 						case "raport":
@@ -152,7 +206,22 @@ public class Kontroler {
 									odpowiedz = "(id: nazwa)\n" + lista;
 									break;
 								case "wspolrzedne":
-									odpowiedz = "x: " + pojazdy.podajWspolrzedne(Integer.parseInt(argument))[0];
+									if(argument != "") {
+										Point wspolrzedne = pojazdy.podajWspolrzedne(Integer.parseInt(argument));
+										odpowiedz = "Samochód jest obecnie na wspó³rzêdnych " + (int)wspolrzedne.getX() + "x" + (int)wspolrzedne.getY();
+									} else {
+										throw new Exception("O który pojazd chodzi?");
+									}
+									break;
+								case "adres":
+									if(argument != "") {
+										Point wspolrzedne = pojazdy.podajWspolrzedne(Integer.parseInt(argument));
+										String adres = nieruchomosci.podajAdres(wspolrzedne);
+										odpowiedz = "Samochód jest obecnie na " + adres;
+									} else {
+										throw new Exception("O który pojazd chodzi?");
+									}
+									break;
 							}
 							break;
 						case "zarzadzanie":
@@ -224,6 +293,14 @@ public class Kontroler {
 										odpowiedz = "Przesuwam pojazd nr " + argument + " w lewo";
 									} else {
 										throw new Exception("Który pojazd przesun¹æ?");
+									}
+									break;
+								case "kierowanie":
+									if(argument != "") {
+										odpowiedz = "Zaczynam sterowanie pojazdem numer " + argument;
+										miasto.zmienSterowany(Integer.parseInt(argument));
+									} else {
+										throw new Exception("Którego pojazdu stery mam przej¹æ?");
 									}
 									break;
 								default:

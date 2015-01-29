@@ -95,7 +95,7 @@ public class Zlecenia {
 	}
 	
 	public void wygenerujZlecenia(int liczbaZlecen) throws Exception {
-		int wymiarX = 25; // spytaæ Bartka
+		int wymiarX = 25;
 		int wymiarY = 25;
 		
 		try {
@@ -137,5 +137,23 @@ public class Zlecenia {
 		} catch (Exception e) {
 			throw new Exception(e.getMessage());
 		}
+	}
+	
+	public void dostarczZlecenie(int id) throws Exception {
+		Calendar teraz = new GregorianCalendar();
+		
+		String rok = Integer.toString(teraz.get(Calendar.YEAR));
+		String miesiac = Integer.toString(teraz.get(Calendar.MONTH));
+		String dzien = Integer.toString(teraz.get(Calendar.DAY_OF_MONTH));
+		
+		String dataDostarczenia = rok + "-" + miesiac + "-" + dzien;
+		
+		this.baza_danych.edytujRekord(Integer.toString(id), "wykonane", "true");
+		this.baza_danych.edytujRekord(Integer.toString(id), "dataOdbioru", dataDostarczenia);
+		
+		Przesylki przesylki = new Przesylki();
+		przesylki.oddajPrzesylke(id);
+		
+		this.zaladujListeZlecen();
 	}
 }
