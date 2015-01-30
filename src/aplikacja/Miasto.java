@@ -15,19 +15,13 @@ import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.ScrollPaneConstants;
 import javax.swing.Timer;
-
-import obiekty.Pojazd;
-import mapa.Mapa;
 import dane.Nieruchomosci;
 import dane.Pojazdy;
 
 public class Miasto extends JFrame implements ActionListener, KeyListener {
     
-    public String komenda;              // tymczasowe
-    paczka paczka = new paczka(5, 13);  // tymczasowe
-    
+    public String komenda;      
     public JFrame frame1, frame2;
     public JTextField EkranKomend;
     public JTextArea EkranOdpowiedzi;
@@ -73,6 +67,7 @@ public class Miasto extends JFrame implements ActionListener, KeyListener {
             EkranOdpowiedzi.setBounds(10, 65, 400, 500);
             EkranOdpowiedzi.setVisible(true);
             EkranOdpowiedzi.addKeyListener(this);
+            EkranOdpowiedzi.setLineWrap(true);
             
             //----------------Ekran z komendami
             frame2 = new JFrame("Okno na komendy");
