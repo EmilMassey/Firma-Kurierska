@@ -48,15 +48,8 @@ Polecenia wydawane s¹ s³ownie w konsoli, w której mo¿emy nawi¹zaæ rozmowê z kier
 * dodana mo¿liwoœæ generowania dowolnej iloœci losowych zleceñ
 
 ### Faza 5
-*09.01.2015*
-* po³¹czenie kontrolera i programu obs³uguj¹cego okno
-* dodane klasy przesylki i zlecenia i ich obs³uga
-* dodana mo¿liwoœæ generowania dowolnej iloœci losowych zleceñ
-
-----------------
-### Do zrobienia:
-* dodaæ klasê kierowców
-* obs³uga zleceñ
-* musimy inaczej generowaæ wspó³rzêdne w zleceniach?
-* (wyszukiwanie drogi - jak zostanie czas)
-* (mo¿e dodatkowy poziom w jêzyku?)
+*30.01.2015*
+* zmieniona grafika
+* obs³uga wielu pojazdów jednoczeœnie
+* dostarczanie / odbieranie zleceñ
+* wyszukiwanie drogi
