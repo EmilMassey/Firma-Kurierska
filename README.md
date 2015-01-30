@@ -15,10 +15,16 @@ Polecenia wydawane s¹ s³ownie w konsoli, w której mo¿emy nawi¹zaæ rozmowê z kier
 ### Przyk³adowe polecenia, jakie mo¿na wydaæ w konsoli:  
 * Czy mo¿esz mi powiedzieæ, jakie pojazdy mamy w tej chwili w naszej firmie?
 * W³aœnie sprzedaliœmy niepotrzebn¹ ciê¿arówkê. Móg³byœ wykreœliæ z naszej listy pojazd o identyfikatorze '5'?
-* Proszê, dodaj do naszej bazy samochód 'Volkswagen Golf IV', '7', '325', '4', '171', '7.2', '40', '55', 'golf.png'.
+* Proszê, dodaj do naszej bazy samochód 'Volkswagen Golf IV', '7', 'duzy_gora.gif'.
 * Zmieñmy w naszej bazie nazwê auta o numerze '2', czyli VW Golfa IV na 'Ferrari'.  
 * Wygeneruj '5' nowych, losowych zleceñ
 * Usuñmy zlecenie nr '4'. To by³a pomy³ka.
+* Jakie mamy aktualnie zlecenia do wykonania?
+* Zacznij sterowaæ samochodem numer '1'
+* Zabierz paczkê z miejsca, w którym siê znajdujesz.
+* Dostarcz paczkê na ten adres
+* Zakoñcz program
+* Poka¿ trasê do 'Rubaka 3'
   
 ### Faza 1
 *24.10.2014*
