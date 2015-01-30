@@ -47,6 +47,12 @@ Polecenia wydawane s¹ s³ownie w konsoli, w której mo¿emy nawi¹zaæ rozmowê z kier
 * dodane klasy przesylki i zlecenia i ich obs³uga
 * dodana mo¿liwoœæ generowania dowolnej iloœci losowych zleceñ
 
+### Faza 5
+*09.01.2015*
+* po³¹czenie kontrolera i programu obs³uguj¹cego okno
+* dodane klasy przesylki i zlecenia i ich obs³uga
+* dodana mo¿liwoœæ generowania dowolnej iloœci losowych zleceñ
+
 ----------------
 ### Do zrobienia:
 * dodaæ klasê kierowców

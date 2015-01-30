@@ -26,7 +26,7 @@ public class RenderPanel extends JPanel {
 
         g.setColor(Color.BLUE);
         for(Point punkt : this.trasa) {
-        	g.fillOval((int)punkt.getX()*30 + 15, (int)punkt.getY()*30 + 15, 5, 5);
+        	g.fillOval((int)punkt.getX()*30 + 12, (int)punkt.getY()*30 + 12, 5, 5);
         }
         
         g.setColor(Color.MAGENTA);

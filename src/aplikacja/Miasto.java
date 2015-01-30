@@ -60,14 +60,19 @@ public class Miasto extends JFrame implements ActionListener, KeyListener {
             EkranKomend.addKeyListener(this);
             
             //----------------Paramety Okna Odpowiedzi
-            EkranOdpowiedzi = new JTextArea();
+            /*EkranOdpowiedzi = new JTextArea();
             EkranOdpowiedzi.setVisible(true);
             EkranOdpowiedzi.setEditable(false);
             EkranOdpowiedzi.setLineWrap(true);
             EkranOdpowiedzi.setWrapStyleWord(true);
             przewijanie = new JScrollPane(EkranOdpowiedzi);
             przewijanie.setBounds(10, 65, 400, 500);
-            przewijanie.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);  
+            przewijanie.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);*/
+            
+            EkranOdpowiedzi = new JTextArea();
+            EkranOdpowiedzi.setBounds(10, 65, 400, 500);
+            EkranOdpowiedzi.setVisible(true);
+            EkranOdpowiedzi.addKeyListener(this);
             
             //----------------Ekran z komendami
             frame2 = new JFrame("Okno na komendy");
@@ -76,7 +81,8 @@ public class Miasto extends JFrame implements ActionListener, KeyListener {
             frame2.setLayout(null);
             frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame2.add(EkranKomend);
-            frame2.add(przewijanie);
+            frame2.add(EkranOdpowiedzi);
+            //frame2.add(przewijanie);
             Start();
             
             try {
@@ -95,6 +101,14 @@ public class Miasto extends JFrame implements ActionListener, KeyListener {
                 this.renderpanel.grafikiPojazdow.put("sredni_gora.gif", ImageIO.read(new File("grafika/sredni_gora.gif")));
                 this.renderpanel.grafikiPojazdow.put("sredni_lewo.gif", ImageIO.read(new File("grafika/sredni_lewo.gif")));
                 this.renderpanel.grafikiPojazdow.put("sredni_prawo.gif", ImageIO.read(new File("grafika/sredni_prawo.gif")));
+                this.renderpanel.grafikiPojazdow.put("maly1_dol.gif", ImageIO.read(new File("grafika/maly1_dol.gif")));
+                this.renderpanel.grafikiPojazdow.put("maly1_gora.gif", ImageIO.read(new File("grafika/maly1_gora.gif")));
+                this.renderpanel.grafikiPojazdow.put("maly1_lewo.gif", ImageIO.read(new File("grafika/maly1_lewo.gif")));
+                this.renderpanel.grafikiPojazdow.put("maly1_prawo.gif", ImageIO.read(new File("grafika/maly1_prawo.gif")));
+                this.renderpanel.grafikiPojazdow.put("maly2_dol.gif", ImageIO.read(new File("grafika/maly2_dol.gif")));
+                this.renderpanel.grafikiPojazdow.put("maly2_gora.gif", ImageIO.read(new File("grafika/maly2_gora.gif")));
+                this.renderpanel.grafikiPojazdow.put("maly2_lewo.gif", ImageIO.read(new File("grafika/maly2_lewo.gif")));
+                this.renderpanel.grafikiPojazdow.put("maly2_prawo.gif", ImageIO.read(new File("grafika/maly2_prawo.gif")));
              } catch (IOException ex) {
                   System.out.println("Nie udało się stworzyć mapy " + ex.getMessage());
              }
@@ -118,6 +132,8 @@ public class Miasto extends JFrame implements ActionListener, KeyListener {
         switch(K.getKeyCode()) {
             case 10:
             	komenda = EkranKomend.getText();
+            	
+            	String lista_komend = EkranOdpowiedzi.getText();
                 
                 Kontroler kontroler = new Kontroler(Miasto);
                 String odpowiedz;
@@ -129,10 +145,14 @@ public class Miasto extends JFrame implements ActionListener, KeyListener {
     			}       
     			
     			if(komenda != null){
-                    EkranOdpowiedzi.append("\n\nKomenda: " + EkranKomend.getText());
+                    EkranOdpowiedzi.setText("Komenda: " + EkranKomend.getText());
                 }
+    			if(komenda.length() <= 0)
+                	odpowiedz = "Proszę wpisać komendę";
     			
     			EkranOdpowiedzi.append("\nOdpowiedź: " + odpowiedz);
+    			
+    			EkranOdpowiedzi.append("\n\n" + lista_komend);
                 
                 EkranKomend.setText(null);
                 break;

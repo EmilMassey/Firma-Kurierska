@@ -75,7 +75,23 @@ public class Pojazdy {
 	
 	public void nowyPojazd(Map <String, String> dane) throws Exception {
 		try {
+			Random los = new Random();
+			dane.put("pojemnosc", Integer.toString(los.nextInt(300)+200));
+			dane.put("typ_ladunku", Integer.toString(los.nextInt(5)));
+			dane.put("predkosc_max", Integer.toString(los.nextInt(60) + 120));
+			dane.put("spalanie", "10.0");
+			dane.put("poziom_paliwa", "100");
+			dane.put("max_pojemnosc_baku", "100");
 			dane.put("rejestracja", generujRejestracje("PO"));
+			
+			Nieruchomosci nieruchomosci = new Nieruchomosci();
+			Point wspolrzedne = new Point(los.nextInt(nieruchomosci.mapa.getSzerokosc()+1), los.nextInt(nieruchomosci.mapa.getWysokosc()+1));
+			
+			while(!nieruchomosci.nawigacja.czyUlica(nieruchomosci.mapa, wspolrzedne))																		// tylko prawdziwe
+				wspolrzedne = new Point(los.nextInt(nieruchomosci.mapa.getSzerokosc()+1), los.nextInt(nieruchomosci.mapa.getWysokosc()+1));
+			
+			dane.put("wspolrzedne", Integer.toString((int)wspolrzedne.getX()) + "x" + Integer.toString((int)wspolrzedne.getY()));
+			
 			this.baza_danych.dodajRekord("pojazd", dane);
 			this.zaladujListePojazdow();
 		} catch (Exception e) {
@@ -113,9 +129,12 @@ public class Pojazdy {
 	}
 	
 	public boolean czyIstnieje(int id) {
-		if(this.pojazdy.containsKey(id))
-			return true;
-		return false;
+		try {
+			this.zaladujListePojazdow();
+			if(this.pojazdy.containsKey(id))
+				return true;
+			return false;
+		} catch (Exception e) { return false; }
 	}
 	
 	public void zmienPozycjePojazdu(int id, Point pozycja) throws Exception {

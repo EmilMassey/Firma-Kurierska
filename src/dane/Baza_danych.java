@@ -65,6 +65,8 @@ public class Baza_danych {
 	}
 
 	public int dodajRekord(String nazwa_rekordu, Map <String, String> dane) {
+		this.zaladujXML();
+		
 		Node root = this.xml.getFirstChild();
 		
 		int id = Integer.parseInt(this.xml.getElementsByTagName("kolejny_id").item(0).getTextContent());
@@ -86,6 +88,8 @@ public class Baza_danych {
 	}
 	
 	public void usunRekord(String id) throws Exception {
+		this.zaladujXML();
+		
 		Node root = this.xml.getFirstChild();
 		Node rekord = (Node) this.xpath.compile("//*[@id='" + id + "']").evaluate(this.xml, XPathConstants.NODE);
 		if(rekord != null)
@@ -96,7 +100,9 @@ public class Baza_danych {
 		this.aktualizujXml();		
 	}
 	
-	public void edytujRekord(String id, String nazwa_elementu, String nowa_wartosc) throws Exception {
+	public void edytujRekord(String id, String nazwa_elementu, String nowa_wartosc) throws Exception {		
+		this.zaladujXML();
+		
 		Node rekord = (Node) this.xpath.compile("//*[@id='" + id + "']/" + nazwa_elementu).evaluate(this.xml, XPathConstants.NODE);
 		if(rekord != null)
 			rekord.setTextContent(nowa_wartosc);

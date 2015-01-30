@@ -252,22 +252,15 @@ public class Kontroler {
 							switch(akcja.getNazwa()) {
 								case "dodanie":
 									Map <String, String> dane = new HashMap<String, String>();
-									if(!argumenty.isEmpty() && argumenty.size() >= 9) {
+									if(!argumenty.isEmpty() && argumenty.size() >= 3) {
 										dane.put("nazwa", argumenty.get(0));
 										dane.put("typ", argumenty.get(1));
-										dane.put("pojemnosc", argumenty.get(2));
-										dane.put("typ_ladunku", argumenty.get(3));
-										dane.put("predkosc_max", argumenty.get(4));
-										dane.put("spalanie", argumenty.get(5));
-										dane.put("poziom_paliwa", argumenty.get(6));
-										dane.put("max_pojemnosc_baku", argumenty.get(7));
-										dane.put("grafika", argumenty.get(8));
-										// wspó³rzêdne dodaæ
+										dane.put("grafika", argumenty.get(2));
 										
 										pojazdy.nowyPojazd(dane);
 										odpowiedz = "Doda³em pojazd!";
 									} else {
-										throw new Exception("Muszê znaæ takie informacje o pojeŸdzie: nazwa, typ, pojemnoœæ, typ ³adunku, prêdkoœæ maksymalna, spalanie, poziom paliwa, maksymalna pojemnoœæ baku, adres grafiki");
+										throw new Exception("Muszê znaæ takie informacje o pojeŸdzie: nazwa, typ, adres grafiki");
 									}
 									break;
 								case "usuwanie":
@@ -333,6 +326,13 @@ public class Kontroler {
 							break;
 					}
 					break;
+					case "program":
+						switch(akcja.getNazwa()) {
+							case "zakoncz":
+								System.exit(0);
+								break;
+						}
+						break;
 				default:
 					throw new Exception("Nie rozumiem komendy. " + typ.getNazwa() + ": " + akcja.getNazwa() + " " + obiekt.getNazwa());
 			}

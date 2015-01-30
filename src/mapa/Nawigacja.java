@@ -50,8 +50,7 @@ public class Nawigacja {
 					
 					if(odleglosc < wektory.get(sasiadujacyWektor).getOdleglosc()) {
 						wektory.get(sasiadujacyWektor).setOdleglosc(odleglosc);								// ustaw now¹ odleg³oœc, je¿eli wiêksza ni¿ do tej pory
-						wektory.get(sasiadujacyWektor).setPoprzednik(biezacyWektor);						// bie¿¹cy wektor jako poprzednik
-						
+						wektory.get(sasiadujacyWektor).setPoprzednik(biezacyWektor);						// bie¿¹cy wektor jako poprzednik						
 					}
 					
 					if(sasiadujacyWektor.equals(koniec)) {													// dotarliœmy do celu
