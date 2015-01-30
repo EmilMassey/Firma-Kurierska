@@ -41,7 +41,6 @@ public class Miasto extends JFrame implements ActionListener, KeyListener {
     private int sterowanyPojazd;    
 
     public Miasto() {
-    	
             wymiar = Toolkit.getDefaultToolkit().getScreenSize();
             
             //----------------Ekran z mapÄ…

@@ -19,7 +19,7 @@ public class Pojazdy {
 	
 	public Pojazdy() throws Exception {
 		try {
-			this.baza_danych = new Baza_danych("pojazdy", "dane");
+			this.baza_danych = new Baza_danych("pojazdy", "baza_danych");
 			this.zaladujListePojazdow();
 		} catch (Exception e) {
 			throw new Exception("Kurczê! Mam problem z list¹ pojazdów. " + e.getMessage());

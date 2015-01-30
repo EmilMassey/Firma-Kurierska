@@ -25,7 +25,7 @@ public class Nieruchomosci {
 	
 	public Nieruchomosci() throws Exception {
 		try {
-			this.baza_danych = new Baza_danych("nieruchomosci", "dane");
+			this.baza_danych = new Baza_danych("nieruchomosci", "baza_danych");
 			this.zaladujListeNieruchomosci();
 		} catch (Exception e) {
 			throw new Exception("Kurczê! Mam problem z list¹ nieruchomoœci. " + e.getMessage());

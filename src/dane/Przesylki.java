@@ -19,7 +19,7 @@ public class Przesylki {
 	
 	public Przesylki() throws Exception {
 		try {
-			this.baza_danych = new Baza_danych("przesylki", "dane");
+			this.baza_danych = new Baza_danych("przesylki", "baza_danych");
 			this.zaladujListePrzesylek();
 		} catch (Exception e) {
 			throw new Exception("Kurczê! Mam problem z list¹ przesy³ek. " + e.getMessage());

@@ -22,7 +22,7 @@ public class Kontroler {
 	public Kontroler(Miasto miasto) {
 		try {
 			this.miasto = miasto;
-			this.analiza = new Analiza("dane/slownik.xml");
+			this.analiza = new Analiza("baza_danych/slownik.xml");
 			this.pojazdy = new Pojazdy();
 			this.przesylki = new Przesylki();
 			this.zlecenia = new Zlecenia();

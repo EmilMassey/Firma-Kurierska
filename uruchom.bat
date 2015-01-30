@@ -1,0 +1,1 @@
+java -jar FirmaKurierska.jar

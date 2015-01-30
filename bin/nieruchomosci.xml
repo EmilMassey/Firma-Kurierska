@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<nieruchomosci>
+	<kolejny_id>0</kolejny_id>
+	<nieruchomosc id="0">
+		<ulica>Akacjowa</ulica>
+		<numer>1</numer>
+		<wspolrzedne>0x17</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="1">
+		<ulica>Akacjowa</ulica>
+		<numer>2</numer>
+		<wspolrzedne>1x17</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="2">
+		<ulica>Akacjowa</ulica>
+		<numer>3</numer>
+		<wspolrzedne>2x17</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="3">
+		<ulica>Akacjowa</ulica>
+		<numer>4</numer>
+		<wspolrzedne>3x17</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="4">
+		<ulica>Akacjowa</ulica>
+		<numer>5</numer>
+		<wspolrzedne>4x17</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="5">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>1</numer>
+		<wspolrzedne>4x7</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="6">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>2</numer>
+		<wspolrzedne>4x8</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="7">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>3</numer>
+		<wspolrzedne>4x9</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="8">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>4</numer>
+		<wspolrzedne>4x10</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="9">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>5</numer>
+		<wspolrzedne>4x11</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="10">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>6</numer>
+		<wspolrzedne>4x12</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="11">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>7</numer>
+		<wspolrzedne>5x12</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="12">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>8</numer>
+		<wspolrzedne>5x13</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="13">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>9</numer>
+		<wspolrzedne>5x14</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="14">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>10</numer>
+		<wspolrzedne>5x15</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="15">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>11</numer>
+		<wspolrzedne>5x16</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="16">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>12</numer>
+		<wspolrzedne>5x17</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="17">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>13</numer>
+		<wspolrzedne>5x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="18">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>14</numer>
+		<wspolrzedne>5x19</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="19">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>15</numer>
+		<wspolrzedne>5x20</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="20">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>16</numer>
+		<wspolrzedne>5x21</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="21">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>17</numer>
+		<wspolrzedne>5x22</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="22">
+		<ulica>Al. Niepodległości</ulica>
+		<numer>18</numer>
+		<wspolrzedne>5x23</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="23">
+		<ulica>Biała</ulica>
+		<numer>1</numer>
+		<wspolrzedne>12x7</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="24">
+		<ulica>Biała</ulica>
+		<numer>2</numer>
+		<wspolrzedne>12x8</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="25">
+		<ulica>Cicha</ulica>
+		<numer>1</numer>
+		<wspolrzedne>8x19</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="26">
+		<ulica>Cicha</ulica>
+		<numer>2</numer>
+		<wspolrzedne>8x20</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="27">
+		<ulica>Ciemna</ulica>
+		<numer>1</numer>
+		<wspolrzedne>6x12</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="28">
+		<ulica>Ciemna</ulica>
+		<numer>2</numer>
+		<wspolrzedne>7x12</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="29">
+		<ulica>Ciemna</ulica>
+		<numer>3</numer>
+		<wspolrzedne>8x12</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="30">
+		<ulica>Dolna</ulica>
+		<numer>1</numer>
+		<wspolrzedne>22x15</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="31">
+		<ulica>Dolna</ulica>
+		<numer>2</numer>
+		<wspolrzedne>23x15</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="32">
+		<ulica>Dolna</ulica>
+		<numer>3</numer>
+		<wspolrzedne>24x15</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="33">
+		<ulica>Dworcowa</ulica>
+		<numer>1</numer>
+		<wspolrzedne>10x0</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="34">
+		<ulica>Dworcowa</ulica>
+		<numer>2</numer>
+		<wspolrzedne>10x1</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="35">
+		<ulica>Dworcowa</ulica>
+		<numer>3</numer>
+		<wspolrzedne>10x2</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="36">
+		<ulica>Długa</ulica>
+		<numer>1</numer>
+		<wspolrzedne>0x2</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="37">
+		<ulica>Długa</ulica>
+		<numer>2</numer>
+		<wspolrzedne>1x2</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="38">
+		<ulica>Długa</ulica>
+		<numer>3</numer>
+		<wspolrzedne>2x2</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="39">
+		<ulica>Długa</ulica>
+		<numer>4</numer>
+		<wspolrzedne>3x2</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="40">
+		<ulica>Długa</ulica>
+		<numer>5</numer>
+		<wspolrzedne>4x2</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="41">
+		<ulica>Długa</ulica>
+		<numer>6</numer>
+		<wspolrzedne>5x2</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="42">
+		<ulica>Górna</ulica>
+		<numer>1</numer>
+		<wspolrzedne>5x0</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="43">
+		<ulica>Górna</ulica>
+		<numer>2</numer>
+		<wspolrzedne>5x1</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="44">
+		<ulica>Jana Pawła II</ulica>
+		<numer>1</numer>
+		<wspolrzedne>0x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="45">
+		<ulica>Jana Pawła II</ulica>
+		<numer>2</numer>
+		<wspolrzedne>1x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="46">
+		<ulica>Jana Pawła II</ulica>
+		<numer>3</numer>
+		<wspolrzedne>2x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="47">
+		<ulica>Jana Pawła II</ulica>
+		<numer>4</numer>
+		<wspolrzedne>3x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="48">
+		<ulica>Jana Pawła II</ulica>
+		<numer>5</numer>
+		<wspolrzedne>4x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="49">
+		<ulica>Jana Pawła II</ulica>
+		<numer>6</numer>
+		<wspolrzedne>5x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="50">
+		<ulica>Jana Pawła II</ulica>
+		<numer>7</numer>
+		<wspolrzedne>6x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="51">
+		<ulica>Jana Pawła II</ulica>
+		<numer>8</numer>
+		<wspolrzedne>7x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="52">
+		<ulica>Jana Pawła II</ulica>
+		<numer>9</numer>
+		<wspolrzedne>8x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="53">
+		<ulica>Jana Pawła II</ulica>
+		<numer>10</numer>
+		<wspolrzedne>9x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="54">
+		<ulica>Jana Pawła II</ulica>
+		<numer>11</numer>
+		<wspolrzedne>10x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="55">
+		<ulica>Jana Pawła II</ulica>
+		<numer>12</numer>
+		<wspolrzedne>11x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="56">
+		<ulica>Jana Pawła II</ulica>
+		<numer>13</numer>
+		<wspolrzedne>12x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="57">
+		<ulica>Jana Pawła II</ulica>
+		<numer>14</numer>
+		<wspolrzedne>13x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="58">
+		<ulica>Jana Pawła II</ulica>
+		<numer>15</numer>
+		<wspolrzedne>14x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="59">
+		<ulica>Jana Pawła II</ulica>
+		<numer>16</numer>
+		<wspolrzedne>15x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="60">
+		<ulica>Jana Pawła II</ulica>
+		<numer>17</numer>
+		<wspolrzedne>16x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="61">
+		<ulica>Jana Pawła II</ulica>
+		<numer>18</numer>
+		<wspolrzedne>17x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="62">
+		<ulica>Jana Pawła II</ulica>
+		<numer>19</numer>
+		<wspolrzedne>18x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="63">
+		<ulica>Jana Pawła II</ulica>
+		<numer>20</numer>
+		<wspolrzedne>19x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="64">
+		<ulica>Jasna</ulica>
+		<numer>1</numer>
+		<wspolrzedne>12x16</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="65">
+		<ulica>Jasna</ulica>
+		<numer>2</numer>
+		<wspolrzedne>12x17</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="66">
+		<ulica>Kopernika</ulica>
+		<numer>1</numer>
+		<wspolrzedne>0x23</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="67">
+		<ulica>Kopernika</ulica>
+		<numer>2</numer>
+		<wspolrzedne>1x23</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="68">
+		<ulica>Kopernika</ulica>
+		<numer>3</numer>
+		<wspolrzedne>2x23</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="69">
+		<ulica>Kopernika</ulica>
+		<numer>4</numer>
+		<wspolrzedne>3x23</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="70">
+		<ulica>Kopernika</ulica>
+		<numer>5</numer>
+		<wspolrzedne>4x23</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="71">
+		<ulica>Kościuszki</ulica>
+		<numer>1</numer>
+		<wspolrzedne>8x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="72">
+		<ulica>Kościuszki</ulica>
+		<numer>2</numer>
+		<wspolrzedne>9x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="73">
+		<ulica>Kościuszki</ulica>
+		<numer>3</numer>
+		<wspolrzedne>10x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="74">
+		<ulica>Kościuszki</ulica>
+		<numer>4</numer>
+		<wspolrzedne>11x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="75">
+		<ulica>Kościuszki</ulica>
+		<numer>5</numer>
+		<wspolrzedne>12x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="76">
+		<ulica>Kościuszki</ulica>
+		<numer>6</numer>
+		<wspolrzedne>13x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="77">
+		<ulica>Kościuszki</ulica>
+		<numer>7</numer>
+		<wspolrzedne>14x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="78">
+		<ulica>Kościuszki</ulica>
+		<numer>8</numer>
+		<wspolrzedne>15x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="79">
+		<ulica>Kościuszki</ulica>
+		<numer>9</numer>
+		<wspolrzedne>16x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="80">
+		<ulica>Kościuszki</ulica>
+		<numer>10</numer>
+		<wspolrzedne>17x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="81">
+		<ulica>Kościuszki</ulica>
+		<numer>11</numer>
+		<wspolrzedne>18x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="82">
+		<ulica>Kościuszki</ulica>
+		<numer>12</numer>
+		<wspolrzedne>19x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="83">
+		<ulica>Kościuszki</ulica>
+		<numer>13</numer>
+		<wspolrzedne>20x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="84">
+		<ulica>Kościuszki</ulica>
+		<numer>14</numer>
+		<wspolrzedne>21x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="85">
+		<ulica>Kościuszki</ulica>
+		<numer>15</numer>
+		<wspolrzedne>22x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="86">
+		<ulica>Kościuszki</ulica>
+		<numer>16</numer>
+		<wspolrzedne>23x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="87">
+		<ulica>Kościuszki</ulica>
+		<numer>17</numer>
+		<wspolrzedne>24x18</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="88">
+		<ulica>Leppera</ulica>
+		<numer>1</numer>
+		<wspolrzedne>22x19</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="89">
+		<ulica>Leppera</ulica>
+		<numer>2</numer>
+		<wspolrzedne>22x20</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="90">
+		<ulica>Leppera</ulica>
+		<numer>3</numer>
+		<wspolrzedne>22x21</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="91">
+		<ulica>Leppera</ulica>
+		<numer>4</numer>
+		<wspolrzedne>22x22</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="92">
+		<ulica>Leppera</ulica>
+		<numer>5</numer>
+		<wspolrzedne>22x23</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="93">
+		<ulica>Leppera</ulica>
+		<numer>6</numer>
+		<wspolrzedne>22x24</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="94">
+		<ulica>Matejki</ulica>
+		<numer>1</numer>
+		<wspolrzedne>17x19</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="95">
+		<ulica>Matejki</ulica>
+		<numer>2</numer>
+		<wspolrzedne>17x20</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="96">
+		<ulica>Matejki</ulica>
+		<numer>3</numer>
+		<wspolrzedne>17x21</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="97">
+		<ulica>Matejki</ulica>
+		<numer>4</numer>
+		<wspolrzedne>17x22</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="98">
+		<ulica>Matejki</ulica>
+		<numer>5</numer>
+		<wspolrzedne>17x23</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="99">
+		<ulica>Mokra</ulica>
+		<numer>1</numer>
+		<wspolrzedne>6x21</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="100">
+		<ulica>Mokra</ulica>
+		<numer>2</numer>
+		<wspolrzedne>7x21</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="101">
+		<ulica>Mokra</ulica>
+		<numer>3</numer>
+		<wspolrzedne>8x21</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="102">
+		<ulica>Mokra</ulica>
+		<numer>4</numer>
+		<wspolrzedne>9x21</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="103">
+		<ulica>Mokra</ulica>
+		<numer>5</numer>
+		<wspolrzedne>10x21</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="104">
+		<ulica>Mokra</ulica>
+		<numer>6</numer>
+		<wspolrzedne>11x21</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="105">
+		<ulica>Muzyczna</ulica>
+		<numer>1</numer>
+		<wspolrzedne>16x12</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="106">
+		<ulica>Muzyczna</ulica>
+		<numer>2</numer>
+		<wspolrzedne>17x12</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="107">
+		<ulica>Muzyczna</ulica>
+		<numer>3</numer>
+		<wspolrzedne>18x12</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="108">
+		<ulica>Muzyczna</ulica>
+		<numer>4</numer>
+		<wspolrzedne>19x12</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="109">
+		<ulica>Muzyczna</ulica>
+		<numer>5</numer>
+		<wspolrzedne>20x12</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="110">
+		<ulica>Poznańska</ulica>
+		<numer>1</numer>
+		<wspolrzedne>20x4</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="111">
+		<ulica>Poznańska</ulica>
+		<numer>2</numer>
+		<wspolrzedne>20x5</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="112">
+		<ulica>Poznańska</ulica>
+		<numer>3</numer>
+		<wspolrzedne>20x6</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="113">
+		<ulica>Poznańska</ulica>
+		<numer>4</numer>
+		<wspolrzedne>20x7</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="114">
+		<ulica>Poznańska</ulica>
+		<numer>5</numer>
+		<wspolrzedne>20x8</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="115">
+		<ulica>Poznańska</ulica>
+		<numer>6</numer>
+		<wspolrzedne>20x9</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="116">
+		<ulica>Poznańska</ulica>
+		<numer>7</numer>
+		<wspolrzedne>21x9</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="117">
+		<ulica>Poznańska</ulica>
+		<numer>8</numer>
+		<wspolrzedne>21x10</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="118">
+		<ulica>Poznańska</ulica>
+		<numer>9</numer>
+		<wspolrzedne>21x11</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="119">
+		<ulica>Poznańska</ulica>
+		<numer>10</numer>
+		<wspolrzedne>21x12</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="120">
+		<ulica>Poznańska</ulica>
+		<numer>11</numer>
+		<wspolrzedne>21x13</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="121">
+		<ulica>Poznańska</ulica>
+		<numer>12</numer>
+		<wspolrzedne>21x14</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="122">
+		<ulica>Poznańska</ulica>
+		<numer>13</numer>
+		<wspolrzedne>21x15</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="123">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>1</numer>
+		<wspolrzedne>9x9</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="124">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>2</numer>
+		<wspolrzedne>10x9</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="125">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>3</numer>
+		<wspolrzedne>11x9</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="126">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>4</numer>
+		<wspolrzedne>12x9</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="127">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>5</numer>
+		<wspolrzedne>13x9</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="128">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>6</numer>
+		<wspolrzedne>14x9</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="129">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>7</numer>
+		<wspolrzedne>15x9</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="130">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>8</numer>
+		<wspolrzedne>15x10</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="131">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>9</numer>
+		<wspolrzedne>15x11</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="132">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>10</numer>
+		<wspolrzedne>15x12</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="133">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>11</numer>
+		<wspolrzedne>15x13</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="134">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>12</numer>
+		<wspolrzedne>15x14</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="135">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>13</numer>
+		<wspolrzedne>15x15</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="136">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>14</numer>
+		<wspolrzedne>14x15</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="137">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>15</numer>
+		<wspolrzedne>13x15</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="138">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>16</numer>
+		<wspolrzedne>12x15</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="139">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>17</numer>
+		<wspolrzedne>11x15</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="140">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>18</numer>
+		<wspolrzedne>10x15</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="141">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>19</numer>
+		<wspolrzedne>9x15</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="142">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>20</numer>
+		<wspolrzedne>9x14</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="143">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>21</numer>
+		<wspolrzedne>9x13</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="144">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>22</numer>
+		<wspolrzedne>9x12</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="145">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>23</numer>
+		<wspolrzedne>9x11</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="146">
+		<ulica>Rondo Kurierskie</ulica>
+		<numer>24</numer>
+		<wspolrzedne>9x10</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="147">
+		<ulica>Rubaka</ulica>
+		<numer>1</numer>
+		<wspolrzedne>10x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="148">
+		<ulica>Rubaka</ulica>
+		<numer>10</numer>
+		<wspolrzedne>19x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="149">
+		<ulica>Rubaka</ulica>
+		<numer>11</numer>
+		<wspolrzedne>20x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="150">
+		<ulica>Rubaka</ulica>
+		<numer>12</numer>
+		<wspolrzedne>21x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="151">
+		<ulica>Rubaka</ulica>
+		<numer>13</numer>
+		<wspolrzedne>22x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="152">
+		<ulica>Rubaka</ulica>
+		<numer>14</numer>
+		<wspolrzedne>23x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="153">
+		<ulica>Rubaka</ulica>
+		<numer>15</numer>
+		<wspolrzedne>24x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="154">
+		<ulica>Rubaka</ulica>
+		<numer>2</numer>
+		<wspolrzedne>11x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="155">
+		<ulica>Rubaka</ulica>
+		<numer>3</numer>
+		<wspolrzedne>12x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="156">
+		<ulica>Rubaka</ulica>
+		<numer>4</numer>
+		<wspolrzedne>13x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="157">
+		<ulica>Rubaka</ulica>
+		<numer>5</numer>
+		<wspolrzedne>14x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="158">
+		<ulica>Rubaka</ulica>
+		<numer>6</numer>
+		<wspolrzedne>15x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="159">
+		<ulica>Rubaka</ulica>
+		<numer>7</numer>
+		<wspolrzedne>16x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="160">
+		<ulica>Rubaka</ulica>
+		<numer>8</numer>
+		<wspolrzedne>17x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="161">
+		<ulica>Rubaka</ulica>
+		<numer>9</numer>
+		<wspolrzedne>18x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="162">
+		<ulica>Rynkowa</ulica>
+		<numer>1</numer>
+		<wspolrzedne>18x0</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="163">
+		<ulica>Rynkowa</ulica>
+		<numer>2</numer>
+		<wspolrzedne>18x1</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="164">
+		<ulica>Rynkowa</ulica>
+		<numer>3</numer>
+		<wspolrzedne>18x2</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="165">
+		<ulica>Szkolna</ulica>
+		<numer>1</numer>
+		<wspolrzedne>18x13</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="166">
+		<ulica>Szkolna</ulica>
+		<numer>2</numer>
+		<wspolrzedne>18x14</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="167">
+		<ulica>Szkolna</ulica>
+		<numer>3</numer>
+		<wspolrzedne>18x15</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="168">
+		<ulica>Szkolna</ulica>
+		<numer>4</numer>
+		<wspolrzedne>18x16</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="169">
+		<ulica>Szkolna</ulica>
+		<numer>5</numer>
+		<wspolrzedne>18x17</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="170">
+		<ulica>Szpitalna</ulica>
+		<numer>1</numer>
+		<wspolrzedne>18x23</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="171">
+		<ulica>Szpitalna</ulica>
+		<numer>2</numer>
+		<wspolrzedne>19x23</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="172">
+		<ulica>Szpitalna</ulica>
+		<numer>3</numer>
+		<wspolrzedne>20x23</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="173">
+		<ulica>Szpitalna</ulica>
+		<numer>4</numer>
+		<wspolrzedne>21x23</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="174">
+		<ulica>Warszawska</ulica>
+		<numer>1</numer>
+		<wspolrzedne>11x22</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="175">
+		<ulica>Warszawska</ulica>
+		<numer>2</numer>
+		<wspolrzedne>11x23</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="176">
+		<ulica>Warszawska</ulica>
+		<numer>3</numer>
+		<wspolrzedne>11x24</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="177">
+		<ulica>Winna</ulica>
+		<numer>1</numer>
+		<wspolrzedne>2x3</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="178">
+		<ulica>Winna</ulica>
+		<numer>2</numer>
+		<wspolrzedne>2x4</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="179">
+		<ulica>Winna</ulica>
+		<numer>3</numer>
+		<wspolrzedne>2x5</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="180">
+		<ulica>Śląska</ulica>
+		<numer>1</numer>
+		<wspolrzedne>22x9</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="181">
+		<ulica>Śląska</ulica>
+		<numer>2</numer>
+		<wspolrzedne>23x9</wspolrzedne>
+	</nieruchomosc>
+	<nieruchomosc id="182">
+		<ulica>Śląska</ulica>
+		<numer>3</numer>
+		<wspolrzedne>24x9</wspolrzedne>
+	</nieruchomosc>
+</nieruchomosci>

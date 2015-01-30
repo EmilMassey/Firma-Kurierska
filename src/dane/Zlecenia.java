@@ -23,7 +23,7 @@ public class Zlecenia {
 	
 	public Zlecenia() throws Exception {
 		try {
-			this.baza_danych = new Baza_danych("zlecenia", "dane");
+			this.baza_danych = new Baza_danych("zlecenia", "baza_danych");
 			this.zaladujListeZlecen();
 		} catch (Exception e) {
 			throw new Exception("Kurczê! Mam problem z list¹ zleceñ. " + e.getMessage());

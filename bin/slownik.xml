@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<slownik>
+	<typy>
+		<typ>polecenie</typ>
+		<typ>raport</typ>
+		<typ>ustawienie</typ>
+		<typ>zarzadzanie</typ>
+		<typ>rada</typ>
+		<typ>pogawedka</typ>
+		<typ>inne</typ>
+		<typ>sterowanie</typ>
+	</typy>
+
+	<akcje>
+		<akcja nazwa="dostarczanie" typ="polecenie">
+			<slowo mnoga="false">dostarcz</slowo>
+			<slowo mnoga="false">zawiez</slowo>
+			<slowo mnoga="true">zawiezcie</slowo>
+			<slowo mnoga="false">wiez</slowo>
+			<slowo mnoga="true">wiezcie</slowo>
+			<slowo mnoga="false">zanies</slowo>
+			<slowo mnoga="true">zaniescie</slowo>
+			<slowo mnoga="false">przywiez</slowo>
+			<slowo mnoga="true">przywiezcie</slowo>
+			<slowo mnoga="false">zostaw</slowo>
+		</akcja>
+		<akcja nazwa="zabieranie" typ="polecenie">
+			<slowo mnoga="false">zabierz</slowo>
+			<slowo mnoga="false">wez</slowo>
+			<slowo mnoga="true">odbierzcie</slowo>
+			<slowo mnoga="false">odbierz</slowo>
+		</akcja>
+		<akcja nazwa="ile" typ="raport">
+			<slowo mnoga="false">ile</slowo>
+			<slowo mnoga="true">iloma</slowo>
+            <slowo mnoga="false">policz</slowo>
+            <slowo mnoga="false">oblicz</slowo>
+		</akcja>
+		<akcja nazwa="jak" typ="raport">
+			<slowo mnoga="false">duzo</slowo>
+			<slowo mnoga="false">malo</slowo>
+			<slowo mnoga="false">dlugo</slowo>
+			<slowo mnoga="false">krotko</slowo>
+			<slowo mnoga="false">bardzo</slowo>
+			<slowo mnoga="false">mocno</slowo>
+			<slowo mnoga="true">mocne</slowo>
+		</akcja>
+		<akcja nazwa="pokaz" typ="raport">
+			<slowo mnoga="false">pokaz</slowo>
+			<slowo mnoga="false">pokazac</slowo>
+			<slowo mnoga="false">pokazesz</slowo>
+			<slowo mnoga="true">pokazcie</slowo>
+			<slowo mnoga="true">pokazecie</slowo>
+			<slowo mnoga="false">powiedz</slowo>
+			<slowo mnoga="true">powiedzcie</slowo>
+			<slowo mnoga="false">powiedziec</slowo>
+			<slowo mnoga="false">podaj</slowo>
+			<slowo mnoga="false">podac</slowo>
+			<slowo mnoga="true">podajcie</slowo>
+			<slowo mnoga="false">zdaj</slowo>
+			<slowo mnoga="true">zdajcie</slowo>
+			<slowo mnoga="false">wypisz</slowo>
+			<slowo mnoga="false">wypiszmy</slowo>
+			<slowo mnoga="false">wypisac</slowo>
+			<slowo mnoga="true">wypiszcie</slowo>
+			<slowo mnoga="false">wyswietl</slowo>
+		</akcja>
+		<akcja nazwa="dodanie" typ="zarzadzanie">
+			<slowo mnoga="false">dodaj</slowo>
+			<slowo mnoga="true">dodajcie</slowo>
+			<slowo mnoga="true">dodajmy</slowo>
+			<slowo mnoga="false">dodac</slowo>
+			<slowo mnoga="false">nowa</slowo>
+			<slowo mnoga="false">nowe</slowo>
+			<slowo mnoga="false">nowy</slowo>
+			<slowo mnoga="false">kolejny</slowo>
+			<slowo mnoga="false">kolejna</slowo>
+			<slowo mnoga="true">kolejne</slowo>
+			<slowo mnoga="true">kolejni</slowo>
+		</akcja>
+		<akcja nazwa="usuwanie" typ="zarzadzanie">
+			<slowo mnoga="false">usun</slowo>
+			<slowo mnoga="false">usunac</slowo>
+			<slowo mnoga="true">usunmy</slowo>
+			<slowo mnoga="true">usuncie</slowo>
+			<slowo mnoga="true">wykreslcie</slowo>
+			<slowo mnoga="true">wykreslmy</slowo>
+			<slowo mnoga="false">wykresl</slowo>
+			<slowo mnoga="false">wykreslic</slowo>
+		</akcja>
+		<akcja nazwa="edycja" typ="zarzadzanie">
+			<slowo mnoga="false">edytuj</slowo>
+			<slowo mnoga="true">edytujcie</slowo>
+			<slowo mnoga="true">edytujmy</slowo>
+			<slowo mnoga="false">edytowac</slowo>
+			<slowo mnoga="false">edycja</slowo>
+			<slowo mnoga="false">edycji</slowo>
+			<slowo mnoga="false">zmiana</slowo>
+			<slowo mnoga="false">zmienic</slowo>
+			<slowo mnoga="false">zmien</slowo>
+			<slowo mnoga="true">zmiencie</slowo>
+			<slowo mnoga="true">zmienmy</slowo>
+		</akcja>
+		<akcja nazwa="gora" typ="sterowanie">
+			<slowo mnoga="false">gora</slowo>
+			<slowo mnoga="false">gore</slowo>
+			<slowo mnoga="false">gory</slowo>
+			<slowo mnoga="false">wyzej</slowo>
+		</akcja>
+		<akcja nazwa="dol" typ="sterowanie">
+			<slowo mnoga="false">dol</slowo>
+			<slowo mnoga="false">nizej</slowo>
+		</akcja>
+		<akcja nazwa="prawo" typ="sterowanie">
+			<slowo mnoga="false">prawo</slowo>
+			<slowo mnoga="false">prawa</slowo>
+		</akcja>
+		<akcja nazwa="lewo" typ="sterowanie">
+			<slowo mnoga="false">lewo</slowo>
+			<slowo mnoga="false">lewa</slowo>
+		</akcja>
+		<akcja nazwa="kierowanie" typ="sterowanie">
+			<slowo mnoga="false">kieruj</slowo>
+			<slowo mnoga="false">kierowanie</slowo>
+			<slowo mnoga="false">kierowac</slowo>
+			<slowo mnoga="false">sterowanie</slowo>
+			<slowo mnoga="false">sterowac</slowo>
+			<slowo mnoga="false">kierownica</slowo>
+			<slowo mnoga="false">kierownice</slowo>
+			<slowo mnoga="true">stery</slowo>
+			<slowo mnoga="false">ster</slowo>
+			<slowo mnoga="false">steruj</slowo>
+		</akcja>
+		<akcja nazwa="wspolrzedne" typ="raport">
+		    <slowo mnoga="true">wspolrzedne</slowo>
+		    <slowo mnoga="true">wspolrzednych</slowo>
+		    <slowo mnoga="false">wspolrzedna</slowo>
+		    <slowo mnoga="false">wspolrzednej</slowo>
+		</akcja>
+		<akcja nazwa="adres" typ="raport">
+			<slowo mnoga="true">adres</slowo>
+		    <slowo mnoga="false">gdzie</slowo>
+		    <slowo mnoga="false">znalezc</slowo>
+		    <slowo mnoga="false">znajdz</slowo>
+		    <slowo mnoga="false">miejsce</slowo>
+		    <slowo mnoga="false">miejscu</slowo>
+		</akcja>
+		<akcja nazwa="wygeneruj" typ="ustawienie">
+		    <slowo mnoga="true">wygenerujcie</slowo>
+		    <slowo mnoga="false">wygeneruj</slowo>
+		    <slowo mnoga="false">wygenerowac</slowo>
+		    <slowo mnoga="false">generuj</slowo>
+		    <slowo mnoga="true">generujcie</slowo>
+		    <slowo mnoga="false">generowac</slowo>
+		    <slowo mnoga="false">wygenerowanie</slowo>
+		    <slowo mnoga="false">generowanie</slowo>
+		</akcja>
+	</akcje>
+	
+	<obiekty>
+		<obiekt nazwa="pojazd">
+			<slowo mnoga="false">samochod</slowo>
+			<slowo mnoga="true">samochody</slowo>
+			<slowo mnoga="true">samochodow</slowo>
+			<slowo mnoga="false">auto</slowo>
+			<slowo mnoga="true">auta</slowo>
+			<slowo mnoga="true">aut</slowo>
+			<slowo mnoga="false">pojazd</slowo>
+			<slowo mnoga="true">pojazdy</slowo>
+            <slowo mnoga="true">pojazdow</slowo>
+            <slowo mnoga="true">pojazdami</slowo>
+		</obiekt>
+		<obiekt nazwa="paczka">
+			<slowo mnoga="false">paczka</slowo>
+			<slowo mnoga="true">paczki</slowo>
+			<slowo mnoga="false">paczke</slowo>
+			<slowo mnoga="true">paczek</slowo>
+			<slowo mnoga="false">przesylka</slowo>
+			<slowo mnoga="false">przesylke</slowo>
+			<slowo mnoga="true">przesylki</slowo>
+		</obiekt>
+		<obiekt nazwa="paliwo">
+			<slowo mnoga="false">paliwo</slowo>
+			<slowo mnoga="false">paliwa</slowo>
+			<slowo mnoga="false">benzyna</slowo>
+			<slowo mnoga="false">benzyny</slowo>
+		</obiekt>
+		<obiekt nazwa="kierowca">
+			<slowo mnoga="false">kierowca</slowo>
+			<slowo mnoga="true">kierowcy</slowo>
+			<slowo mnoga="false">kierowce</slowo>
+			<slowo mnoga="true">kierowcow</slowo>
+		</obiekt>
+		<obiekt nazwa="dostawa">
+			<slowo mnoga="false">dostawa</slowo>
+			<slowo mnoga="true">dostaw</slowo>
+			<slowo mnoga="false">dostawy</slowo>
+		</obiekt>
+		<obiekt nazwa="zlecenie">
+			<slowo mnoga="false">zlecenie</slowo>
+			<slowo mnoga="true">zlecenia</slowo>
+			<slowo mnoga="false">zadanie</slowo>
+			<slowo mnoga="true">zadania</slowo>
+			<slowo mnoga="true">zleceniom</slowo>
+			<slowo mnoga="true">zlecen</slowo>
+		</obiekt>
+		<obiekt nazwa="nieruchomosc">
+			<slowo mnoga="false">nieruchomosc</slowo>
+			<slowo mnoga="true">nieruchomosci</slowo>
+			<slowo mnoga="true">budynki</slowo>
+			<slowo mnoga="false">budynek</slowo>
+			<slowo mnoga="false">dom</slowo>
+			<slowo mnoga="false">budynku</slowo>
+		</obiekt>
+		<obiekt nazwa="trasa">		
+			<slowo mnoga="false">trasa</slowo>
+			<slowo mnoga="false">droga</slowo>
+			<slowo mnoga="false">droge</slowo>
+			<slowo mnoga="false">trase</slowo>
+		</obiekt>
+	</obiekty>
+	
+</slownik>
